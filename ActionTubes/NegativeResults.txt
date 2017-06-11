@@ -1,0 +1,7 @@
+THINGS I TRIED AND DID NOT WORK
+
+[1] I was never able to reproduce Simonyan and Zisserman's flow network, when trained from scratch on UCF101 (split 1). When fine-tuning from ImageNet-1K weights on optical flow I managed to get something reasonable (72% accuracy). The accuracy on split 1 of my flow network when trained from scratch is significantly lower than 72%. 
+
+[2] I tried to transfer the knowledge of actors in J-HMDB (captured by my networks) to UCF101 (where no actor location is provided) using LSDA techniques (HOffman et al. NIPS 2014). The results looked interesting. The highest scoring regions where background regions. For example, for surfing the highest scoring regions where on crashing waves. For skiers, they were on white snow patches. Every time there was a white patch it would predict skiing, even in videos that had nothing to do with the sport. There might have been a bug, or it might be that the scene bias in UCF 101 is too strong to let anything interesting emerge.
+
+[3] I tried to add scene features to the action specific features for action detection in J-HMDB or UCF Sports. Performance didn't go up, unlike action recognition in still images (e.g. PASCAL VOC), where scene matters a ton. It might be because scene is unrelated with the actions in the dataset, or maybe because the action specific features already captured whatever there was to capture.
