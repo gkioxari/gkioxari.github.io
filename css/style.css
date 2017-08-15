@@ -47,6 +47,12 @@ a:hover {
   text-decoration: none;
 }
 
+mark {
+	  font-size: 11pt;
+    background-color: #E88D6E;
+    color: white;
+}
+
 
 /* Main page container */
 
