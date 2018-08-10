@@ -52,7 +52,7 @@ a:hover {
 
 
 .container {
-	width: 1250px;
+	width: 1100px;
 	min-height: 200px;
 	margin: 0 auto; /* top and bottom, right and left */
 	border: 1px hidden #000;
@@ -64,7 +64,7 @@ a:hover {
 }
 
 .containersmall {
-	width: 1250px;
+	width: 1100px;
 	min-height: 10px;
 	margin: 0 auto; /* top and bottom, right and left */
 	border: 1px hidden #000;
