@@ -8,7 +8,7 @@ PyTorch3D is by far the most challenging project I have ever worked on, both as 
 
 We knew that our submission to NeurIPS 2020 would be a new experience for us. None of the authors had submitted a paper like this before. Our reviews were disheartening, yet predictable. Please note that my goal is not to shame reviewers. Reviewers provide their service voluntarily and I deeply thank them for their time and energy! But the review process revelead to me that our community overall is short-sighted and unaccepting of anything out of the norm. 
 
-The first comment shared by all reviewers was that our submission lacked "novelty". This word, seen so often in reviews, triggers so many emotions in me! It is abused, it lacks content and has no place in a scientific/academic review process. 
+The first comment shared by all reviewers was that our submission lacked "novelty", without further explanation. This word, seen so often in reviews, triggers so many emotions in me! It is abused, it lacks content and has no place in a scientific/academic review process. 
 
 ##  What is "novelty"?
 
