@@ -66,6 +66,7 @@
     <h2>News</h2>
       <div class="news">
         <ul>
+         <li><span> We received the PAMI Mark Everingham award for Detectron</span></li>
          <li><span> I had a deeply philosophical discussion with Dhruv for <a href="https://anchor.fm/humanstoriesai/episodes/S2E8-Georgia-Gkioxari-with-Dhruv-Batra-e14rolj/a-a66kkfh">Humans of AI: Stories, Not Stats</a>.</span></li> 
          <li><span> I am the recipient of the 2021 PAMI Young Researcher Award! <a href="https://ai.facebook.com/blog/qa-with-georgia-gkioxari-winner-of-the-2021-pami-young-researcher-award">Here</a> is a little Q&A I did about my work.
          <li><span> I enjoyed chatting with Sam about deep learning research in this <a href="https://twimlai.com/3d-deep-learning-with-pytorch-3d-w-georgia-gkioxari/">TWiML podcast</a>!</span></li> 
@@ -79,6 +80,58 @@
 
   <div class="container">
     <h2> Research </h2>
+
+    <div class="publication">
+      <table width="900" align="center" border="0" cellpadding="0">
+        <td width="40%" valign="center"><img src="teasers/viewsegteaser.png" alt="game" width="180" height="180" style="border-style: none">
+        <td width="60%" valign="top">
+          <p><a href="https://arxiv.org/pdf/2112.01520.pdf"><b>Recognizing Scenes from Novel Viewpoints</b></a><br>
+          <a href="https://jasonqsy.github.io/"> Shengyi Qian</a>, <a href="https://alexander-kirillov.github.io/"> Alexander Kirillov</a>, <a href="https://github.com/nikhilaravi"> Nikhila Ravi</a>, <a href="https://devendrachaplot.github.io/"> Devendra Singh Chaplot</a>, <a href="https://web.eecs.umich.edu/~justincj/"> Justin Johnson</a>, <a href="https://web.eecs.umich.edu/~fouhey/"> David F. Fouhey</a>, <strong> Georgia Gkioxari</strong><br>
+          
+          <div class="paper" id="viewseg">
+            <a href="https://arxiv.org/abs/2112.01520">arxiv</a> / 
+            <a href="https://jasonqsy.github.io/viewseg/">project page</a> /
+            <a shape="rect" href="javascript:togglebib('viewseg')" class="togglebib">bibtex</a>
+            <pre xml:space="preserve">
+@article{qian2020viewseg,
+  title={Recognizing Scenes from Novel Viewpoints},
+  author={Shengyi Qian and Alexander Kirillov and Nikhila Ravi and Devendra Singh Chaplot and Justin Johnson and David Fouhey and Georgia Gkioxari},
+  journal={arXiv preprint arXiv:2112.01520},
+  year={2020}
+}
+            </pre>   
+          </div>
+        </td> 
+        </td>
+      </table>
+    </div>
+    <hr>
+
+    <div class="publication">
+      <table width="900" align="center" border="0" cellpadding="0">
+        <td width="40%" valign="center"><img src="teasers/dsteaser.png" alt="game" width="180" height="120" style="border-style: none">
+        <td width="60%" valign="top">
+          <p><a href="https://arxiv.org/pdf/2110.05472.pdf"><b>Differentiable Stereopsis: Meshes from multiple views using differentiable rendering</b></a><br>
+          <a href="https://people.eecs.berkeley.edu/~shubham-goel/"> Shubham Goel</a>, <strong> Georgia Gkioxari</strong>, <a href="https://people.eecs.berkeley.edu/~malik/"> Jitendra Malik</a> <br>
+          
+          <div class="paper" id="ds">
+            <a href="https://arxiv.org/abs/2110.05472">arxiv</a> / 
+            <a href="https://shubham-goel.github.io/ds/">project page</a> /
+            <a shape="rect" href="javascript:togglebib('ds')" class="togglebib">bibtex</a>
+            <pre xml:space="preserve">
+@article{goel2020ds,
+  title={Differentiable Stereopsis: Meshes from multiple views using differentiable rendering},
+  author={Shubham Goel and Georgia Gkioxari and Jitendra Malik},
+  journal={arXiv preprint arXiv:2110.05472},
+  year={2020}
+}
+            </pre>   
+          </div>
+        </td> 
+        </td>
+      </table>
+    </div>
+    <hr>
 
     <div class="publication">
       <table width="900" align="center" border="0" cellpadding="0">
@@ -122,11 +175,11 @@
             <a href="https://github.com/facebookresearch/3D-Vision-and-Touch">code</a> / 
             <a shape="rect" href="javascript:togglebib('visiontouch')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{smith20203d,
+@inproceedings{smith20203d,
   title={3D Shape Reconstruction from Vision and Touch},
   author={Smith, Edward J and Calandra, Roberto and Romero, Adriana and Gkioxari, 
           Georgia and Meger, David and Malik, Jitendra and Drozdzal, Michal},
-  journal={NeurIPS},
+  Booktitle={NeurIPS},
   year={2020}
 }
             </pre>   
@@ -151,10 +204,10 @@
             <a href="http://www.robots.ox.ac.uk/~ow/synsin.html">project page</a> /
             <a shape="rect" href="javascript:togglebib('synsin')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{synsin,
+@inproceedings{synsin,
 Title={{SynSin}: {E}nd-to-end View Synthesis from a Single Image},,
 Author={Olivia Wiles, Georgia Gkioxari, Richard Szeliski, Justin Johnson},
-Journal={CVPR},
+Booktitle={CVPR},
 Year={2020}}
             </pre>             
           </div>
@@ -179,10 +232,10 @@ Year={2020}}
             <a href="https://docs.google.com/presentation/d/18yd22C2RCs_dACrRL01r1eqHq9FrGwPXQAokq6QqSjE/edit?usp=sharing">examples</a> /
             <a shape="rect" href="javascript:togglebib('meshrcnn')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{meshrcnn,
+@inproceedings{meshrcnn,
 Title={Mesh R-CNN},
 Author={Georgia Gkioxari, Jitendra Malik, Justin Johnson},
-Journal={ICCV},
+Booktitle={ICCV},
 Year={2019}}
             </pre>             
           </div>
@@ -205,11 +258,11 @@ Year={2019}}
             <a href="http://embodiedqa.org/"> project page</a> /
             <a shape="rect" href="javascript:togglebib('matterport')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{wijmans2019,
+@inproceedings{wijmans2019,
 Title={Embodied Question Answering in Photorealistic Environments with Point Cloud Perception},
 Author={Erik Wijmans and Samyak Datta and Oleksandr Maksymets and Georgia Gkioxari
         and Stefan Lee and Irfan Essa and Devi Parikh and Dhruv Batra},
-Journal={CVPR},
+Booktitle={CVPR},
 Year={2019}}
             </pre>             
           </div>
@@ -232,10 +285,10 @@ Year={2019}}
             <a href="http://embodiedqa.org/"> project page</a> /
             <a shape="rect" href="javascript:togglebib('mteqa')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{mteqa,
+@inproceedings{mteqa,
 Title={Multi-Target Embodied Question Answering},
 Author={Licheng Yu and Xinlei Chen and Georgia Gkioxari and Mohit Bansal and Tamara Berg and Dhruv Batra},
-Journal={CVPR},
+Booktitle={CVPR},
 Year={2019}}
             </pre>             
           </div>
@@ -258,11 +311,11 @@ Year={2019}}
             <a href="http://embodiedqa.org/"> project page</a> /
             <a shape="rect" href="javascript:togglebib('nmc')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{nmc,
+@inproceedings{nmc,
 Title={{N}eural {M}odular {C}ontrol for {E}mbodied {Q}uestion {A}nswering},
 Author={Abhishek Das and Georgia Gkioxari 
         and Stefan Lee and Devi Parikh and Dhruv Batra},
-Journal={CoRL},
+Booktitle={CoRL},
 Year={2018}}
             </pre>             
           </div>
@@ -312,11 +365,11 @@ Year      = {2018}}
               <a href="InteractNet/index.html">project page</a> /
               <a shape="rect" href="javascript:togglebib('interactnet')" class="togglebib">bibtex</a>
               <pre xml:space="preserve">
-@article{gkioxari2017interactnet,
+@inproceedings{gkioxari2017interactnet,
 Author    = {Georgia Gkioxari and Ross Girshick and 
              Piotr Doll\'{a}r and Kaiming He},
 Title     = {Detecting and Recognizing Human-Object Intaractions},
-Journal   = {CVPR},
+Booktitle = {CVPR},
 Year      = {2018}}
               </pre>       
             </div>
@@ -340,12 +393,12 @@ Year      = {2018}}
             <a href="https://github.com/facebookresearch/EmbodiedQA"> code</a> /
             <a shape="rect" href="javascript:togglebib('embodiedqa')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{embodiedqa,
+@inproceedings{embodiedqa,
 Title={{E}mbodied {Q}uestion {A}nswering},
 Author={Abhishek Das and Samyak Datta and 
           Georgia Gkioxari and Stefan Lee and 
           Devi Parikh and Dhruv Batra},
-Journal={CVPR},
+Booktitle={CVPR},
 Year={2018}}
             </pre>             
           </div>
@@ -369,11 +422,11 @@ Year={2018}}
             <a href="https://github.com/facebookresearch/DetectAndTrack/">code</a> /
             <a shape="rect" href="javascript:togglebib('posetrack')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{girdhar2018,
+@inproceedings{girdhar2018,
 Title={Detect-and-Track: Efficient Pose Estimation in Videos,
 Author={Rohit Girdhar and Georgia Gkioxari and 
         Lorenzo Torresani and Manohar Paluri and Du Tran},
-Journal={CVPR},
+Booktitle={CVPR},
 Year={2018}}
             </pre>             
           </div>
@@ -395,12 +448,12 @@ Year={2018}}
             <a href="https://arxiv.org/abs/1712.04440">arxiv</a> /
             <a shape="rect" href="javascript:togglebib('datadistillation')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{dd,
+@inproceedings{dd,
 Title={Data Distillation: Towards Omni-Supervised Learning,
 Author={Ilija Radosavovic and Piotr Doll\'{a}r and
         Ross Girshick and Georgia Gkioxari and 
         Kaiming He},
-Journal={CVPR},
+Booktitle={CVPR},
 Year={2018}}
             </pre>             
           </div>
@@ -424,11 +477,11 @@ Year={2018}}
             <a href="https://github.com/facebookresearch/Detectron"> code</a> /
             <a shape="rect" href="javascript:togglebib('maskrcnn')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{he2017maskrcnn,
+@inproceedings{he2017maskrcnn,
 Author    = {Kaiming He and Georgia Gkioxari and
          Piotr Doll\'{a}r and Ross Girshick},
 Title     = {Mask R-CNN},
-Journal   = {arXiv preprint arXiv:1703.06870},
+Booktitle   = {ICCV},
 Year      = {2017}}
             </pre>             
           </div>
@@ -450,10 +503,10 @@ Year      = {2017}}
             <div class="paper" id="learn2smile">
               <a shape="rect" href="javascript:togglebib('learn2smile')" class="togglebib">bibtex</a>
               <pre xml:space="preserve">
-@article{learn2smile2017,
+@inproceedings{learn2smile2017,
 Author    = {Will Feng, Anitha Kannan, Georgia Gkioxari and Larry Zitnick},
 Title     = {Learn2Smile: Learning Non-verbal Interaction through Observation},
-Journal   = {IROS},
+Booktitle = {IROS},
 Year      = {2017}}
               </pre>       
             </div>
@@ -478,7 +531,7 @@ Year      = {2017}}
             <a href="ChainModels/index.html">project page</a> /
             <a shape="rect" href="javascript:togglebib('chain')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{chain16,
+@inproceedings{chain16,
 Author = {G. Gkioxari and A. Toshev and N. Jaitly},
 Title = {Chained Predictions Using 
        Convolutional Neural Networks},
@@ -505,7 +558,7 @@ Year = {2016}}
             <a href="https://github.com/gkioxari/RstarCNN">code</a> /
             <a shape="rect" href="javascript:togglebib('rstarcnn')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{rstarcnn,
+@inproceedings{rstarcnn,
 Author = {G. Gkioxari and R. Girshick and J. Malik},
 Title = {Contextual Action Recognition with R*CNN},
 Booktitle = {ICCV},
@@ -530,7 +583,7 @@ Year = {2015}}
             <a href="http://arxiv.org/abs/1412.2604">arxiv</a> /
             <a shape="rect" href="javascript:togglebib('deepparts')" class="togglebib">bibtex</a>
             <pre xml:space="preserve">
-@article{deepparts,
+@inproceedings{deepparts,
 Author = {G. Gkioxari and R. Girshick and J. Malik},
 Title = {Actions and Attributes from Wholes and Parts},
 Booktitle = {ICCV},
@@ -559,7 +612,7 @@ Year = {2015}}
             <a href="http://nbviewer.ipython.org/github/gkioxari/ActionTubes/blob/master/test_tubes/UCFsports_benchmark/UCFsports_auc.ipynb">UCF Sports Benchmark</a> /
             <a shape="rect" href="javascript:togglebib('ActionCNN')" class="togglebib">bibtex</a></span>
             <pre xml:space="preserve">
-@article{actiontubes,
+@inproceedings{actiontubes,
 Author = {G. Gkioxari and J. Malik},
 Title = {Finding Action Tubes},
 Booktitle = {CVPR},
