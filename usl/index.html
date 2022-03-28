@@ -3,6 +3,7 @@
 <head>
   <title>Learning 3D Object Shape and Layout without 3D Supervision</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js" type="module"></script>
 </head>
 
 <body> 
@@ -81,9 +82,50 @@
 <div class="container">
   <h1>Results on Hypersim</h1>
     <p><img src="resources/video3d_vis_hypersim.gif" height="360" align="middle" /></p>
-  </br>
+</div>
+
+</br>
+
+<div class="container">
   <h1>Results on ShapeNet</h1>
-    <p><img src="resources/video3d_vis_shapenet.gif" height="200" align="middle" /></p>
+  <p><img src="resources/video3d_vis_shapenet.gif" height="200" align="middle" /></p>
+</div>
+
+</br> 
+
+<div class="container">
+  <h1> Interactive 3D models on ShapeNet</h1>
+  <!-- 3D model viewer -->
+  <div class="row">
+    <div class="column">
+      <img src="resources/sceneshapenet/ex3/image.png" height="150" align="left" />
+      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex3/scene.glb" shadow-intensity="1" camera-controls>
+    </div>
+    <div class="column">
+      <img src="resources/sceneshapenet/ex4/image.png" height="150" align="left" />
+      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex4/scene.glb" shadow-intensity="1" camera-controls>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="resources/sceneshapenet/ex1/image.png" height="150" align="left" />
+      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex1/scene.glb" shadow-intensity="1" camera-controls>
+    </div>
+    <div class="column">
+      <img src="resources/sceneshapenet/ex5/image.png" height="150" align="left" />
+      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex5/scene.glb" shadow-intensity="1" camera-controls>
+    </div>
+  </div> 
+  <div class="row">
+    <div class="column">
+      <img src="resources/sceneshapenet/ex2/image.png" height="150" align="left" />
+      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex2/scene.glb" shadow-intensity="1" camera-controls>
+    </div>
+    <div class="column">
+      <img src="resources/sceneshapenet/ex6/image.png" height="150" align="left" />
+      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex6/scene.glb" shadow-intensity="1" camera-controls>
+    </div>
+  </div>   
 </div>   
 
 </br>
