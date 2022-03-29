@@ -44,7 +44,7 @@
     <tr>
       <td align=center width=100px>
         <center>
-          <span style="font-size:24px"><a href="">[Paper]</a></span>
+          <span style="font-size:24px"><a href="https://drive.google.com/file/d/1E6xSbUzuu6soAA-jkaGCFl97LZ8SVRvr/view?usp=sharing">[Paper]</a></span>
         </center>
       </td>
       <td align=center width=200px>
@@ -96,37 +96,44 @@
 <div class="container">
   <h1> Interactive 3D models on ShapeNet</h1>
   <!-- 3D model viewer -->
-  <div class="row">
-    <div class="column">
-      <img src="resources/sceneshapenet/ex3/image.png" height="150" align="left" />
-      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex3/scene.glb" shadow-intensity="1" camera-controls>
-    </div>
-    <div class="column">
-      <img src="resources/sceneshapenet/ex4/image.png" height="150" align="left" />
-      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex4/scene.glb" shadow-intensity="1" camera-controls>
-    </div>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="resources/sceneshapenet/ex1/image.png" height="150" align="left" />
-      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex1/scene.glb" shadow-intensity="1" camera-controls>
-    </div>
-    <div class="column">
-      <img src="resources/sceneshapenet/ex5/image.png" height="150" align="left" />
-      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex5/scene.glb" shadow-intensity="1" camera-controls>
-    </div>
-  </div> 
-  <div class="row">
-    <div class="column">
-      <img src="resources/sceneshapenet/ex2/image.png" height="150" align="left" />
-      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex2/scene.glb" shadow-intensity="1" camera-controls>
-    </div>
-    <div class="column">
-      <img src="resources/sceneshapenet/ex6/image.png" height="150" align="left" />
-      <model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex6/scene.glb" shadow-intensity="1" camera-controls>
-    </div>
-  </div>   
-</div>   
+  <table>
+    <tr>
+      <th style="width:30%" align="center">Input Image</th>
+      <th style="width:30%" align="center">USL</th>
+      <th style="width:30%" align="center">Mesh R-CNN</th>
+    </tr>
+    <tr>
+      <td align="center" width=30.0%><img src="resources/sceneshapenet/ex1/image.png" height="150"></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex1/scene.glb" shadow-intensity="1"camera-controls></model-viewer></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex1/meshrcnn_scene.glb" shadow-intensity="1" camera-controls></model-viewer></td>
+    </tr>
+    <tr>
+      <td align="center" width=30.0%><img src="resources/sceneshapenet/ex4/image.png" height="150"></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex4/scene.glb" shadow-intensity="1"camera-controls></model-viewer></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex4/meshrcnn_scene.glb" shadow-intensity="1" camera-controls></model-viewer></td>
+    </tr>
+    <tr>
+      <td align="center" width=30.0%><img src="resources/sceneshapenet/ex3/image.png" height="150"></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex3/scene.glb" shadow-intensity="1"camera-controls></model-viewer></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex3/meshrcnn_scene.glb" shadow-intensity="1" camera-controls></model-viewer></td>
+    </tr>
+    <tr>
+      <td align="center" width=30.0%><img src="resources/sceneshapenet/ex2/image.png" height="150"></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex2/scene.glb" shadow-intensity="1"camera-controls></model-viewer></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex2/meshrcnn_scene.glb" shadow-intensity="1" camera-controls></model-viewer></td>
+    </tr>
+    <tr>
+      <td align="center" width=30.0%><img src="resources/sceneshapenet/ex5/image.png" height="150"></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex5/scene.glb" shadow-intensity="1"camera-controls></model-viewer></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex5/meshrcnn_scene.glb" shadow-intensity="1" camera-controls></model-viewer></td>
+    </tr>
+    <tr>
+      <td align="center" width=30.0%><img src="resources/sceneshapenet/ex6/image.png" height="150"></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex6/scene.glb" shadow-intensity="1"camera-controls></model-viewer></td>
+      <td align="center" width=30.0%><model-viewer exposure="2" environment-image="neutral" interaction-prompt="when-focused" src="resources/sceneshapenet/ex6/meshrcnn_scene.glb" shadow-intensity="1" camera-controls></model-viewer></td>
+    </tr>
+  </table>
+</div> 
 
 </br>
 

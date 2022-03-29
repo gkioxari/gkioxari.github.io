@@ -69,8 +69,8 @@ a:hover {
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-  float: right;
-  width: 50.00%;
+  float: left;
+  width: 0.00%;
   padding: 0px;
 }
 
