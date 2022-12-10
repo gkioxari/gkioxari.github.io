@@ -43,16 +43,16 @@ a:active {
 }
 
 a:hover {
-	color: #f09228;
+  color: #f09228;
   text-decoration: none;
 }
 
+
 mark {
-	  font-size: 10pt;
+	font-size: 10pt;
     background-color: #E88D6E;
     color: white;
 }
-
 
 /* Main page container */
 
@@ -95,10 +95,10 @@ mark {
 
 .news {
 	width: 1000px;
-	min-height: 200px;
+	min-height: 30px;
 	margin: 0 auto; /* top and bottom, right and left */
-	/*border: 1px solid #000;*/
-	border: none;
+	border: 1px hidden #000;
+	/* border: none; */
 	text-align: left;
 	padding: 1em 1em 1em 1em; /* top, right, bottom, left */
 	color: #4d4b59;
@@ -127,6 +127,21 @@ mark {
 	padding: 1em 1em 1em 1em; /* top, right, bottom, left */
 	color: #4d4b59;
 	background: #FFFFFF;
+}
+
+/* Bullets */
+
+ul {
+	list-style: none;
+}
+
+ul li::before {
+	content: "\2022";
+	color: #f09228;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em;
 }
 
 /* Title and menu */
