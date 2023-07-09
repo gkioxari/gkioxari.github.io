@@ -46,9 +46,9 @@
 
             <p align=justify>I am an Assistant Professor of <a href="https://www.cms.caltech.edu/">Computing +
                 Mathematical Sciences</a> at <a href="https://www.caltech.edu/">Caltech</a> and a William H. Hurt
-              scholar. From
-              2016 to 2022, I was a research scientist at <a href="https://research.facebook.com/ai/">FAIR</a>. I
-              received my PhD from <a href="http://www.berkeley.edu/">UC Berkeley</a>, where I was advised by <a
+              scholar. From 2016 to 2022, I was a research scientist at Meta, at <a
+                href="https://research.facebook.com/ai/">FAIR</a>. I received my PhD from <a
+                href="http://www.berkeley.edu/">UC Berkeley</a>, where I was advised by <a
                 href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I did my bachelors in <a
                 href="http://www.ece.ntua.gr/">ECE</a> at <a href="http://www.ntua.gr/">NTUA</a> in Athens, Greece,
               where I worked with <a href="http://cvsp.cs.ntua.gr/maragos/">Petros Maragos</a>.</p>
@@ -89,16 +89,39 @@
   <br>
 
   <div class="container">
-    <table width="90%" border="0" align="justify" cellpadding="20">
-      <h2>Research</h2>
-      <div class="reserach">
-        <p>My research interests lie in computer vision and machine learning. I want to build intelligent systems that
-          perceive
-          the world from images. Our world is complex, it is three dimensional and it is dynamic.
+    <table width="90%" border="0" align="center" cellpadding="20">
+      <h2>Research Highlights</h2>
+      <div class="research">
+        <p align=justify> <strong>The goal of my work is to design visual perception models that bridge the gap between
+            2D imagery and
+            our 4D world</strong>. My research interests lie in computer vision and machine learning. I want to build
+          intelligent systems that perceive the world from as little as one single image -- just like humans do!
+          Our world is complex, it is three dimensional and it is dynamic.
           Computational models get to observe this world from imagery but only partially as visual data does not
-          capture the richness of the world we live in. <strong>The goal of my work is to design visual perception
-            models that
-            bridge the gap between 2D imagery and our 4D world.</strong>
+          completely
+          capture the richness of the world we live in. Below I highlight work that attempts to transform visual data to
+          semantic scene representations in 2D and 3D.
+        <ul align="justify">
+          <li><span><strong>Visual Recognition in 2D: </strong> Models that recognize objects and their location (<a
+                href="https://arxiv.org/abs/1703.06870">Mask R-CNN</a>),
+              humans, their actions (<a href="https://arxiv.org/abs/1505.01197">R*CNN</a>) and interactions with other
+              objects (<a href="https://arxiv.org/abs/1704.07333">InteractNet</a>), all from a single image.</span>
+          </li>
+          <li><span><strong>Visual Recognition in 3D:</strong> Models that recognize objects in their natural continuous
+              3D metric space. <a href="https://arxiv.org/abs/2207.10660">Omni3D</a> tackles 3D object detection for
+              over 90 categories from a single image, <a href="https://arxiv.org/abs/2112.01520">ViewSeg</a>
+              performs semantic segmentation in 3D from as few as 4 images.</span></li>
+          <li><span><strong>3D Reconstruction:</strong> Models that recognize objects and their 3D geometry from a
+              single view, in the form of meshes (<a href="https://arxiv.org/abs/1906.02739">Mesh R-CNN</a>) and point
+              clouds (<a href="https://arxiv.org/abs/2301.08247">MCC</a>).</span></li>
+          <li><span><strong>Novel Learning Paradigms for 3D:</strong> Semi-supervised and un-supervised learning
+              techniques to train single-image 3D recognition models that learn from video (<a
+                href="https://arxiv.org/abs/2206.07028">USL</a>). Multi-view optimization for 3D shape and texture
+              inference with ideas from
+              traditional stereopsis (<a href="https://arxiv.org/abs/2110.05472">DS</a>) </span></li>
+          <li><span><strong>Tooling:</strong> <a href="https://github.com/facebookresearch/pytorch3d">PyTorch3D</a> for
+              3D deep learning.</span></li>
+        </ul>
         </p>
       </div>
     </table>
