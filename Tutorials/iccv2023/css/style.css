@@ -85,11 +85,11 @@ mark {
 	/* top and bottom, right and left */
 	border: 1px hidden #000;
 	/* border: none; */
-	text-align: left;
+	text-align: center;
 	padding: 1em 1em 1em 1em;
 	/* top, right, bottom, left */
-	color: #4d4b59;
-	background: #FFFFFF;
+	color: #F8F8FF;
+	background: #000000;
 }
 
 .schedule {
@@ -100,10 +100,10 @@ mark {
 	/*border: 1px solid #000;*/
 	border: none;
 	text-align: left;
-	padding: 1em 1em 1em 1em;
+	padding: 1em 1em 1em 10em;
 	/* top, right, bottom, left */
-	color: #4d4b59;
-	background: #FFFFFF;
+	color: #F8F8FF;
+	background: #000000;
 }
 
 .news {
