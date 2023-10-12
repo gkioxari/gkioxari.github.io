@@ -253,9 +253,9 @@ table.psets {
 }
 
 .instructorphotosmall img {
-	width: 60px;
-	border-radius: 60px;
-	margin-bottom: 10px;
+	width: 120px;
+	border-radius: 120px;
+	margin-bottom: 5px;
 }
 
 .instructor {
