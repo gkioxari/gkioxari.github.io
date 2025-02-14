@@ -170,7 +170,7 @@ mark {
 	/* Scales the image to 120% of its original size */
 	transform-origin: center;
 	/* Keeps the scaling centered */
-	height: 120px;
+	height: 100px;
 	/* Maintains responsive width */
 	width: auto;
 }
@@ -318,7 +318,7 @@ table.psets {
 
 /* Container holding the image and the popup */
 .image-container {
-	width: 220px;
+	width: 200px;
 	position: relative;
 	display: inline-block;
 }
