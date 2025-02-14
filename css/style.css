@@ -162,6 +162,7 @@ mark {
 .topic {
 	position: relative;
 	display: inline-block;
+	font-size: 15pt;
 }
 
 .topic img {
