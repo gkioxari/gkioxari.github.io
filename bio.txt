@@ -1,3 +1,8 @@
-Georgia is an Assistant Professor at the Computing + Mathematical Sciences at Caltech. She obtained her PhD in Electrical Engineering and Computer Science from UC Berkeley, where she was advised by Jitendra Malik. Prior to Berkeley, she earned her diploma from the National Technical University of Athens in Greece. After earning her PhD, she was a research scientist at Meta AI. In 2021, she received the PAMI Young Researcher Award, which recognizes a young researcher for their distinguished research contribution to computer vision. She is the recipient of the PAMI Mark Everingham Award for the open-source software suite Detectron. In 2017, Georgia and her co-authors received the Marr Prize for “Mask R-CNN” published and presented at ICCV. She was named one of 30 influential women advancing AI in 2019 by ReWork and was nominated for the Women in AI Awards in 2020 by VentureBeat.
-
-Georgia’s research focuses on machine vision, namely teaching machines to see. Our world is complex, it is three dimensional and it is dynamic. Computational models get to observe this world from imagery but only partially as visual data does not completely capture the richness of the world we live in. The goal of Georgia’s work is to design visual perception models that bridge the gap between 2D imagery and our 4D world. 
+Georgia is an assistant professor at the Computing + Mathematical Sciences at Caltech. 
+She obtained her PhD in Electrical Engineering and Computer Science from UC Berkeley, where she was advised by Jitendra Malik. 
+Prior to Berkeley, she earned her diploma from the National Technical University of Athens in Greece. After earning her PhD, 
+she was a research scientist at Meta's FAIR team. In 2021, she received the PAMI Young Researcher Award, which recognizes a young 
+researcher for their distinguished research contribution to computer vision. 
+She is the recipient of the PAMI Mark Everingham Award for the open-source software suite Detectron (2021), the Google Faculty Award (2024) and the Okawa Research Award (2024).
+In 2017, Georgia and her co-authors received the Marr Prize for “Mask R-CNN” published and presented at ICCV. 
+She was named one of 30 influential women advancing AI in 2019 by ReWork and was nominated for the Women in AI Awards in 2020 by VentureBeat.

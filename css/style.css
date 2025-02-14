@@ -3,7 +3,7 @@
 
 body {
 	/*background: #f7f7f7;*/
-	background: #e3e5e8;
+	background: #FAFAFA;
 	color: #FFFFFF;
 	font-family: 'Lato', Verdana, Helvetica, sans-serif;
 	;
@@ -150,6 +150,57 @@ mark {
 	background: #FFFFFF;
 }
 
+.content {
+	width: 90%;
+	margin: 0 auto;
+	/* Centers the content block horizontally */
+	text-align: center;
+	color: #4d4b59;
+	background: #FFFFFF;
+}
+
+.topic {
+	position: relative;
+	display: inline-block;
+}
+
+.topic img {
+	display: block;
+	opacity: 0.5;
+	/* Scales the image to 120% of its original size */
+	transform-origin: center;
+	/* Keeps the scaling centered */
+	height: 120px;
+	/* Maintains responsive width */
+	width: auto;
+}
+
+.topic img:hover {
+	opacity: 1.0;
+}
+
+.image-stack {
+	display: flex;
+	flex-direction: column;
+	/* Stacks children vertically */
+	align-items: center;
+	/* Centers images horizontally */
+	gap: 10px;
+	/* Optional: adds space between images */
+}
+
+.image-stack img {
+	display: block;
+	width: 200px;
+	/* Adjusts the width as needed */
+	height: auto;
+	/* Maintains the aspect ratio */
+}
+
+.topic img-stack:hover {
+	opacity: 1.0;
+}
+
 /* Bullets */
 
 ul {
@@ -263,4 +314,57 @@ table.psets {
 	width: 140px;
 	text-align: center;
 	margin-right: 20px;
+}
+
+/* Container holding the image and the popup */
+.image-container {
+	width: 220px;
+	position: relative;
+	display: inline-block;
+}
+
+/* The popup box (initially hidden) */
+.popup {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	text-align: left;
+	/* position the popup to the right of the image */
+	width: 650px;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	z-index: 100;
+}
+
+/* Show the popup when hovering over the container */
+.image-container:hover .popup {
+	display: block;
+}
+
+/* Optional styling for the list */
+.popup h3 {
+	margin-top: 0;
+	font-size: 1.3em;
+}
+
+.popup ul {
+	list-style: none;
+	padding-left: 10px;
+}
+
+.popup ul li {
+	margin-bottom: 5px;
+	font-size: 1em
+}
+
+.popup ul li a {
+	text-decoration: none;
+	color: #0077cc;
+}
+
+.popup ul li a:hover {
+	text-decoration: underline;
 }

@@ -1,0 +1,127 @@
+<html>
+<head>
+<style type="text/css">
+/* Stolen from Sergey stolen from Jon Barron */
+body
+{
+background-color:#FFFFFF;
+color:#222222;
+}
+  a {
+  color: #1772d0;
+  text-decoration:none;
+  }
+  a:focus, a:hover {
+  color: #f09228;
+  text-decoration:none;
+  }
+  body,td,th {
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        font-size: 14px
+  }
+  strong {
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        font-size: 13px
+  }
+  heading {
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 700
+  }
+
+  h5 {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: orange;
+  }
+  </style>
+
+<title>Action Tubes</title>
+
+</head>
+
+<body>
+<h2>Finding Action Tubes</h2>
+<h4>April, 2015</h4>
+
+<p style="text-align: center;">
+<img height=266 src="fat.png" />
+</p>
+
+<h4>Abstract</h4>
+<p>
+We address the problem of action detection in videos. Driven by the latest progress in object detection from 2D images, we build action models using rich feature hierarchies derived from shape and kinematic cues. We incorporate appearance and motion in two ways. First, starting from image region proposals we select those that are motion salient and thus are more likely to contain the action. This leads to a significant reduction in the number of regions being processed and allows for faster computations. Second, we extract spatio-temporal feature representations to build strong classifiers using Convolutional Neural Networks. We link our predictions to produce detections consistent in time, which we call action tubes. We show that our approach outperforms other techniques in the task of action detection.
+<br /><br />
+<a href="https://www.dropbox.com/s/jf9oukcm893e72g/action_tubes.pdf?dl=0">paper</a>
+</p>
+
+<hr />
+
+<h4>Models</h4>
+<p>
+  Reference and pretrained models: <a href="https://www.dropbox.com/s/1nj62gm7ygltcrk/data.tar.gz?dl=0">models(2.8GB)</a> 
+  <br />
+
+  <h5>Reference models</h5>
+
+  Reference models were used to initialize the networks in Finding Action Tubes. 
+  For spatial-CNN, we use a model trained on VOC 2012 train set for the task of detection.
+  For motion-CNN, we use a model trained on UCF101 (split 1) with optical flow. This model achieves 72.2% accuracy on split1 test.
+  <br />
+
+  <h5> Pretrained models</h5>
+
+  Pretrained models on J-HMDB and UCF sports, for spatial- and motion-CNN, are provided. 
+</p>
+
+<hr />
+
+<h4>Code</h4>
+<p>
+  Before using the available source code, you need to install <a href="http://caffe.berkeleyvision.org/">Caffe</a>. </br></br>
+  
+  Action Tubes github repo: <a href="http://github.com/gkioxari/ActionTubes">ActionTubes_github</a> </br></br>
+
+  You can find very useful instructions in the README. Please read it before you use the source code.
+
+</p>
+
+
+<hr />
+
+<h4> UCF Sports Benchmark</h4>
+
+<p>
+  UCF Sports evaluation of Action Tubes and other approaches: <a href="http://nbviewer.ipython.org/github/gkioxari/ActionTubes/blob/master/test_tubes/UCFsports_benchmark/UCFsports_auc.ipynb">UCF Sports</a>
+</p>  
+
+<hr />
+
+<h4>How to cite</h4>
+
+<p>
+When citing our system, please cite this work. The bibtex entry is provided below
+for your convenience.
+</p>
+
+<p>
+<tt>
+ @article{actiontubes, <br />
+  &nbsp; Author = {G. Gkioxari and J. Malik},<br />
+  &nbsp; Title = {Finding Action Tubes},<br />
+  &nbsp; Booktitle = {CVPR},<br />
+  &nbsp; Year = {2015}}
+</tt>
+</p>
+
+<hr />
+
+<h4>Contact</h4>
+<p>
+For any questions regarding the work or the implementation, contact the author at gkioxari@eecs.berkeley.edu 
+</p>
+
+</body>
+
+</html>
