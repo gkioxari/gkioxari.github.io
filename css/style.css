@@ -6,19 +6,18 @@ body {
 	background: #FAFAFA;
 	color: #FFFFFF;
 	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	;
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 12pt;
 }
 
 /* Headings */
 
 h1 {
-	font-size: 30pt;
+	font-size: 28pt;
 }
 
 h2 {
-	font-size: 22pt;
+	font-size: 20pt;
 }
 
 h3 {
@@ -26,7 +25,7 @@ h3 {
 }
 
 li {
-	font-size: 10pt;
+	font-size: 12pt;
 }
 
 li span {
@@ -67,7 +66,7 @@ mark {
 
 
 .container {
-	width: 1024px;
+	width: 980px;
 	min-height: 200px;
 	margin: 0 auto;
 	/* top and bottom, right and left */
@@ -81,7 +80,7 @@ mark {
 }
 
 .containersmall {
-	width: 1024px;
+	width: 950px;
 	min-height: 10px;
 	margin: 0 auto;
 	/* top and bottom, right and left */
@@ -109,7 +108,7 @@ mark {
 }
 
 .news {
-	width: 1000px;
+	width: 900px;
 	min-height: 30px;
 	margin: 0 auto;
 	/* top and bottom, right and left */
@@ -162,7 +161,7 @@ mark {
 .topic {
 	position: relative;
 	display: inline-block;
-	font-size: 15pt;
+	font-size: 14pt;
 }
 
 .topic img {
@@ -228,7 +227,7 @@ ul li::before {
 	white-space: nowrap;
 	margin-bottom: 0em;
 	text-align: center;
-	font-size: 16px;
+	font-size: 16pt;
 }
 
 
