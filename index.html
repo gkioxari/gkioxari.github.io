@@ -150,6 +150,32 @@
       list-style: disc inside;
     }
 
+    /* Blinking tag for new papers */
+    @keyframes blink {
+
+      0%,
+      50% {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+
+    .blink {
+      display: inline-block;
+      padding: 0.15rem 0.45rem;
+      margin-left: 0.25rem;
+      border-radius: 0.25rem;
+      background: var(--accent-2);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      animation: blink 1s step-start infinite;
+    }
+
     /* People grid */
     .people {
       display: grid;
@@ -281,7 +307,7 @@
             <img src="teasers/mrcnn_teaser.png" alt="Mask R-CNN teaser" width="130" height="100" loading="lazy">
             <div class="info">
               <a href="https://arxiv.org/pdf/1703.06870.pdf"><strong>Mask R-CNN</strong></a>
-              <span class="meta">(Marr Prize)</span>
+              <br><span>He, Gkioxari, Dollàr & Girshick</span><br><span class="meta">ICCV 2017, Marr Prize</span>
             </div>
           </div>
 
@@ -291,9 +317,9 @@
           <div class="project">
             <img src="teasers/interactnet_teaser.png" alt="InteractNet teaser" width="130" height="100" loading="lazy">
             <div class="info">
-              <a href="https://arxiv.org/pdf/1704.07333.pdf">
-                <strong>Detecting & Recognizing Human-Object Interactions</strong>
-              </a>
+              <a href="https://arxiv.org/pdf/1704.07333.pdf"><strong>Detecting & Recognizing Human-Object
+                  Interactions</strong></a><br><span>Gkioxari, Girshick, Dollàr &
+                He</span><br><span class="meta">CVPR 2018</span>
             </div>
           </div>
 
@@ -308,13 +334,39 @@
           <summary><span style="color:var(--accent-3);">Selected Projects</span></summary>
           <br>
 
+          <!-- Find Any Part in 3D -->
+          <div class="project">
+            <img src="teasers/find3d_new.gif" alt="Find3D" width="130" height="100" loading="lazy">
+            <div class="info">
+              <a href="https://ziqi-ma.github.io/find3dsite/">
+                <strong>Find Any Part in 3D</strong></a><br><span>Ma, Yue &
+                Gkioxari</span><br><span class="meta">ICCV&nbsp;2025</span><span class="blink">new!</span>
+
+            </div>
+          </div>
+
+          <hr><br>
+
+          <!-- Kyvo -->
+          <div class="project">
+            <img src="teasers/kyvo_rendering.gif" alt="Kyvo" width="130" height="100" loading="lazy">
+            <div class="info">
+              <a href="https://glab-caltech.github.io/kyvo/">
+                <strong>Aligning Text, Images, and 3D Structure Token-by-Token</strong></a><br><span class="meta">Sahoo,
+                Tibrewal &
+                Gkioxari</span><br><span class="blink">new!</span>
+            </div>
+          </div>
+
+          <hr><br>
+
           <!-- Omni3D -->
           <div class="project">
             <img src="teasers/omni3d_aria.gif" alt="Omni3D teaser" width="130" height="100" loading="lazy">
             <div class="info">
               <a href="https://garrickbrazil.com/omni3d/">
                 <strong>Omni3D: A Large Benchmark&nbsp;and Model for 3D Object Detection in the Wild</strong>
-              </a>
+              </a><br><span class="meta">Brazil et al, CVPR 2023</span>
             </div>
           </div>
 
@@ -326,34 +378,12 @@
               loading="lazy">
             <div class="info">
               <a href="https://mcc3d.github.io/">
-                <strong>Multiview Compressive Coding for 3D Reconstruction</strong>
-              </a>
+                <strong>Multiview Compressive Coding for 3D Reconstruction</strong></a><br><span class="meta">Wu et
+                al, CVPR 2023</span>
             </div>
           </div>
 
           <hr><br>
-
-          <!-- Find Any Part in 3D -->
-          <div class="project">
-            <img src="teasers/find3d_new.gif" alt="Find3D" width="130" height="100" loading="lazy">
-            <div class="info">
-              <a href="https://ziqi-ma.github.io/find3dsite/">
-                <strong>Find Any Part in 3D</strong>
-              </a>
-            </div>
-          </div>
-
-          <hr><br>
-
-          <!-- Kyvo -->
-          <div class="project">
-            <img src="teasers/kyvo_rendering.gif" alt="Kyvo" width="130" height="100" loading="lazy">
-            <div class="info">
-              <a href="https://glab-caltech.github.io/kyvo/">
-                <strong>Aligning Text, Images, and 3D Structure Token-by-Token</strong>
-              </a>
-            </div>
-          </div>
 
         </details>
       </div>
@@ -372,8 +402,8 @@
               width="175" height="100" muted autoplay loop playsinline></video>
             <div class="info">
               <a href="https://glab-caltech.github.io/vadar/">
-                <strong>VADAR: Visual Agentic AI for Spatial Reasoning with a Dynamic API</strong>
-              </a>
+                <strong>VADAR: Visual Agentic AI for Spatial Reasoning with a Dynamic API</strong></a><br><span>Marsili,
+                Agrawal, Yue & Gkioxari</span><br><span class="meta">CVPR 2025</span><span class="blink">new!</span>
             </div>
           </div>
         </details>
