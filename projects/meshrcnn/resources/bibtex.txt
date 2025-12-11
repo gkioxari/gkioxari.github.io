@@ -1,5 +1,0 @@
-@article{meshrcnn,
-Title={Mesh R-CNN},
-Author={Georgia Gkioxari, Jitendra Malik, Justin Johnson},
-Journal={ICCV 2019},
-Year={2019}}

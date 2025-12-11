@@ -2,515 +2,758 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Georgia Gkioxari</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
-    integrity="sha512-tpWmw+91EClZLgsFNKFuF8psJxq9r72p5M8sZfGiCaV3m3AQk7Wtb0xgOu17QqC9u7sFz8xTrewd3y8B8Ul+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    :root {
-      --accent-1: #80c4b7;
-      --accent-2: #eec95c;
-      --accent-3: #e3856b;
-      --accent-4: #c78fd8;
-      --text: #333;
-      --bg: #fafafa;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Georgia Gkioxari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
+        integrity="sha512-tpWmw+91EClZLgsFNKFuF8psJxq9r72p5M8sZfGiCaV3m3AQk7Wtb0xgOu17QqC9u7sFz8xTrewd3y8B8Ul+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --accent-1: #80c4b7;
+            --accent-2: #eec95c;
+            --accent-3: #e3856b;
+            --accent-4: #c78fd8;
+            --text: #333;
+            --bg: #fafafa;
+        }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-      font-family: "Inter", sans-serif;
-      font-weight: 300;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+        body {
+            font-family: "Inter", sans-serif;
+            font-weight: 300;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
 
-    a {
-      color: var(--accent-1);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+        a {
+            color: var(--accent-1);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
 
-    a:hover {
-      color: var(--accent-2);
-    }
+        a:hover {
+            color: var(--accent-2);
+        }
 
-    header {
-      max-width: 1000px;
-      margin: 3rem auto 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2rem;
-      padding: 0 1rem;
-    }
+        header {
+            max-width: 1000px;
+            margin: 3rem auto 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
 
-    header img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
+        header img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
-    header .intro {
-      flex: 1;
-      min-width: 280px;
-    }
+        header .intro {
+            flex: 1;
+            min-width: 280px;
+        }
 
-    h1 {
-      font-size: 2.25rem;
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-    }
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
 
-    .social-links a {
-      margin-right: 0.75rem;
-      font-size: 1.2rem;
-    }
+        .social-links a {
+            margin-right: 0.75rem;
+            font-size: 1.2rem;
+        }
 
-    section {
-      max-width: 1000px;
-      margin: 2.5rem auto;
-      padding: 0 1rem;
-    }
+        section {
+            max-width: 1000px;
+            margin: 2.5rem auto;
+            padding: 0 1rem;
+        }
 
-    section h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
+        section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
 
-    /* Awards */
-    .awards ul {
-      list-style: none;
-    }
+        /* Awards */
+        .awards ul {
+            list-style: none;
+        }
 
-    .awards li {
-      margin-bottom: 0.4rem;
-    }
+        .awards li {
+            margin-bottom: 0.4rem;
+        }
 
-    /* Research */
-    .topics {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 1.5rem;
-    }
+        /* Research */
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 1.5rem;
+        }
 
-    .card {
-      background: #fff;
-      border-radius: 0.75rem;
-      padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+        @media (min-width: 900px) {
+            .topics {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 1.2rem;
+                /* optional: a bit tighter so it all fits nicely */
+            }
+        }
 
-    .card img {
-      max-width: 100%;
-      height: 100px;
-      object-fit: contain;
-      margin-bottom: 0.75rem;
-      opacity: 0.8;
-      transition: opacity 0.3s;
-    }
+        .card {
+            background: #fff;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
-    .card img:hover {
-      opacity: 1;
-    }
+        .card img {
+            max-width: 100%;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 0.75rem;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
 
-    details {
-      margin-top: 0.75rem;
-      width: 100%;
-    }
+        .card img:hover {
+            opacity: 1;
+        }
 
-    summary {
-      cursor: pointer;
-      font-weight: 600;
-      list-style: none;
-    }
+        /* Research highlights */
+        .highlights-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
 
-    summary::marker {
-      display: none;
-    }
+        .highlight-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            background: #fff;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
 
-    /* News */
-    .news ul {
-      list-style: disc inside;
-    }
+        .highlight-item.highlight-tools {
+            align-items: center;
+        }
 
-    /* Alumni */
-    .alumni ul {
-      list-style: disc inside;
-    }
+        .highlight-media img,
+        .highlight-media video {
+            width: 220px;
+            max-width: 40vw;
+            border-radius: 0.5rem;
+            object-fit: cover;
+        }
 
-    /* Blinking tag for new papers */
-    @keyframes blink {
+        .highlight-content h3 {
+            margin-bottom: 0.25rem;
+            font-size: 1.05rem;
+        }
 
-      0%,
-      50% {
-        opacity: 1;
-      }
+        .highlight-meta {
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+        }
 
-      25%,
-      75% {
-        opacity: 0;
-      }
-    }
+        .highlight-links a {
+            margin-right: 0.75rem;
+            font-size: 0.9rem;
+        }
 
-    .blink {
-      display: inline-block;
-      padding: 0.15rem 0.45rem;
-      margin-left: 0.25rem;
-      border-radius: 0.25rem;
-      background: var(--accent-2);
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: 600;
-      animation: blink 1s step-start infinite;
-    }
+        .tags {
+            margin-bottom: 0.4rem;
+        }
 
-    /* People grid */
-    .people {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-      gap: 1.5rem;
-      text-align: center;
-    }
+        .tag {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 0.25rem;
+        }
 
-    .people img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 0.5rem;
-    }
+        .tag-2d {
+            background: rgba(128, 196, 183, 0.2);
+            color: #1a5c50;
+        }
 
-    /* Teaching */
-    .teaching-item {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      margin-bottom: 1.25rem;
-    }
+        .tag-3d {
+            background: rgba(238, 201, 92, 0.2);
+            color: #7a5a00;
+        }
 
-    .teaching-item img {
-      width: 140px;
-      border-radius: 0.5rem;
-    }
+        .tag-spatial {
+            background: rgba(227, 133, 107, 0.2);
+            color: #7a2f1a;
+        }
 
-    /* Footer */
-    footer {
-      max-width: 1000px;
-      margin: 3rem auto 1rem;
-      font-size: 0.875rem;
-      text-align: right;
-      padding: 0 1rem;
-    }
+        .tag-tools {
+            background: rgba(199, 143, 216, 0.2);
+            color: #5b2a6e;
+        }
 
-    @media (prefers-color-scheme: dark) {
-      body {
-        --text: #e5e7eb;
-        --bg: #111827;
-      }
+        /* News */
+        .news ul {
+            list-style: disc inside;
+        }
 
-      .card {
-        background: #1f2937;
-        box-shadow: none;
-      }
-    }
-  </style>
+        /* Alumni */
+        .alumni ul {
+            list-style: disc inside;
+        }
+
+        /* Blinking tag for new papers */
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            25%,
+            75% {
+                opacity: 0;
+            }
+        }
+
+        .blink {
+            display: inline-block;
+            padding: 0.15rem 0.45rem;
+            margin-left: 0.25rem;
+            border-radius: 0.25rem;
+            background: var(--accent-2);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            animation: blink 1s step-start infinite;
+        }
+
+        /* People grid */
+        .people {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .people img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Teaching */
+        .teaching-item {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .teaching-item img {
+            width: 140px;
+            border-radius: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            max-width: 1000px;
+            margin: 3rem auto 1rem;
+            font-size: 0.875rem;
+            text-align: right;
+            padding: 0 1rem;
+        }
+
+        @media (max-width: 700px) {
+            .highlight-item {
+                flex-direction: column;
+            }
+
+            .highlight-media img,
+            .highlight-media video {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                --text: #e5e7eb;
+                --bg: #111827;
+            }
+
+            .card,
+            .highlight-item {
+                background: #1f2937;
+                box-shadow: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Hero / Intro -->
-  <header>
-    <img src="teasers/me_at_ark.jpeg" alt="Georgia Gkioxari portrait" />
-    <div class="intro">
-      <h1>Georgia Gkioxari</h1>
-      <p align=justify>I am an assistant professor in the <a
-          href="https://www.cms.caltech.edu/">Computing & Mathematical Sciences</a>
-        department at <a href="https://www.caltech.edu/">Caltech</a>. Previously, I was a research scientist at Meta's
-        <a href="https://research.facebook.com/ai/">FAIR</a> team. I completed my PhD at <a
-          href="http://www.berkeley.edu/">UC Berkeley</a> with <a
-          href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and my undergraduate studies at <a
-          href="http://www.ntua.gr/">NTUA</a>, Greece, where I worked with <a
-          href="http://cvsp.cs.ntua.gr/maragos/">Petros Maragos</a>.
-      </p>
-
-      <br>
-
-      <p align=justify> I am a <a
-          href="https://www.packard.org/insights/news/the-david-and-lucile-packard-foundation-announces-the-2025-class-of-packard-fellows-for-science-and-engineering/">Packard
-          Fellow</a> (2025), the recipient of the <a
-          href="https://tc.computer.org/tcpami/young-researcher-award/#:~:text=This%20annual%20award%20recognizes%20a,the%20PAMI%2DTC%20awards%20committee.">PAMI
-          Young Researcher Award</a> (2021), a <a
-          href="https://research.google/programs-and-events/research-scholar-program/recipients/?filtertab=2024">
-          Google Faculty Award</a> (2024), the <a
-          href="http://www.okawa-foundation.or.jp/en/activities/research_grant/list.html">Okawa Research
-          Award</a> (2024) and the <a
-          href="https://www.amazon.science/research-awards/recipients/georgia-gkioxari">Amazon Research Award</a>
-        (2024). My teammates and I received
-        the <a
-          href="https://tc.computer.org/tcpami/mark-everingham-prize/#:~:text=This%20Prize%20is%20to%20commemorate,%3A%2F%2Fbit.ly%2Fmarkever.">PAMI
-          Mark Everingham Award</a> (2021) for the Detectron Library Suite. I was named one of 30 influential
-        women advancing AI in 2019 by <a href="https://blog.re-work.co/top-women-in-ai-2019/">ReWork</a> and
-        was
-        nominated for the Women in AI Awards in 2020 by <a
-          href="https://venturebeat.com/2020/07/15/announcing-nominees-for-the-second-annual-women-in-ai-awards/">VentureBeat</a>.
-        Read more about me and my work in this <a
-          href="https://ai.facebook.com/blog/qa-with-georgia-gkioxari-winner-of-the-2021-pami-young-researcher-award">Q&A</a>.
-      </p>
-
-      <br>
-
-      <p>
-        <a href="mailto:georgia.gkioxari@gmail.com">email</a> |
-        <a href="cv_gkioxari.pdf">cv</a> |
-        <a href="https://twitter.com/georgiagkioxari">twitter/x</a> |
-        <a href="https://www.linkedin.com/in/georgia-gkioxari-16967b20" target="_blank">linkedin</a>
-        |
-        <a href="https://scholar.google.com/citations?user=kQisE-gAAAAJ&hl=en" target="_blank">google scholar</a> |
-        <a href=" https://github.com/gkioxari/" target="_blank">github</a>
-      </p>
-    </div>
-  </header>
+    <!-- Hero / Intro -->
+    <header>
+        <img src="teasers/me/me_at_ark.jpeg" alt="Georgia Gkioxari portrait" />
+        <div class="intro">
+            <h1>Georgia Gkioxari</h1>
+            <p align=justify>I am an assistant professor in the <a href="https://www.cms.caltech.edu/">Computing &
+                    Mathematical Sciences</a>
+                department at <a href="https://www.caltech.edu/">Caltech</a>. Previously, I was a research scientist at
+                Meta's
+                <a href="https://research.facebook.com/ai/">FAIR</a> team. I completed my PhD at <a
+                    href="http://www.berkeley.edu/">UC Berkeley</a> with <a
+                    href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and my undergraduate studies at <a
+                    href="http://www.ntua.gr/">NTUA</a>, Greece, where I worked with <a
+                    href="http://cvsp.cs.ntua.gr/maragos/">Petros Maragos</a>.
+            </p><br>
+            <p align=justify> I am a <a
+                    href="https://www.packard.org/insights/news/the-david-and-lucile-packard-foundation-announces-the-2025-class-of-packard-fellows-for-science-and-engineering/">Packard
+                    Fellow</a> (2025), the recipient of the <a
+                    href="https://tc.computer.org/tcpami/young-researcher-award/#:~:text=This%20annual%20award%20recognizes%20a,the%20PAMI%2DTC%20awards%20committee.">PAMI
+                    Young Researcher Award</a> (2021), a <a
+                    href="https://research.google/programs-and-events/research-scholar-program/recipients/?filtertab=2024">
+                    Google Faculty Award</a> (2024), the <a
+                    href="http://www.okawa-foundation.or.jp/en/activities/research_grant/list.html">Okawa Research
+                    Award</a> (2024) and the <a
+                    href="https://www.amazon.science/research-awards/recipients/georgia-gkioxari">Amazon Research
+                    Award</a>
+                (2024). My teammates and I received
+                the <a
+                    href="https://tc.computer.org/tcpami/mark-everingham-prize/#:~:text=This%20Prize%20is%20to%20commemorate,%3A%2F%2Fbit.ly%2Fmarkever.">PAMI
+                    Mark Everingham Award</a> (2021) for the Detectron Library Suite. I was named one of 30 influential
+                women advancing AI in 2019 by <a href="https://blog.re-work.co/top-women-in-ai-2019/">ReWork</a> and
+                was
+                nominated for the Women in AI Awards in 2020 by <a
+                    href="https://venturebeat.com/2020/07/15/announcing-nominees-for-the-second-annual-women-in-ai-awards/">VentureBeat</a>.
+                Read more about me and my work in this <a
+                    href="https://ai.facebook.com/blog/qa-with-georgia-gkioxari-winner-of-the-2021-pami-young-researcher-award">Q&A</a>.
+            </p><br>
+            <p>
+                <a href="mailto:georgia.gkioxari@gmail.com">email</a> |
+                <a href="cv_gkioxari.pdf">cv</a> |
+                <a href="https://twitter.com/georgiagkioxari">twitter/x</a> |
+                <a href="https://www.linkedin.com/in/georgia-gkioxari-16967b20" target="_blank">linkedin</a>
+                |
+                <a href="https://scholar.google.com/citations?user=kQisE-gAAAAJ&hl=en" target="_blank">google
+                    scholar</a> |
+                <a href=" https://github.com/gkioxari/" target="_blank">github</a>
+            </p>
+        </div>
+    </header>
 
 
-  <!-- Research Topics -->
-  <section class="research">
-    <h2>Research</h2>
-    <p align=justify>The goal of my work is to design advanced visual perception models that extend the boundaries of
-      current visual
-      capabilities. My research explores new spatial tasks and visual representations that transform images into 2D and
-      3D outputs. Click on <span style="color:var(--accent-3);"><strong>Selected Projects</strong></span> to read about
-      each direction.
-    </p>
-
-    <br>
-
-    <div class="topics">
-      <!-- 2D Perception -->
-      <div class="card">
-        <img src="teasers/maskrcnn.png" alt="2D perception teaser" />
-        <strong>2D Perception</strong>
-        <details>
-          <summary><span style="color:var(--accent-3);">Selected Projects</span></summary>
-          <br>
-
-          <!-- Mask R-CNN -->
-          <div class="project">
-            <img src="teasers/mrcnn_teaser.png" alt="Mask R-CNN teaser" width="130" height="100" loading="lazy">
-            <div class="info">
-              <a href="https://arxiv.org/pdf/1703.06870.pdf"><strong>Mask R-CNN</strong></a>
-              <br><span>He, Gkioxari, Dollàr & Girshick</span><br><span class="meta">ICCV 2017, Marr Prize</span>
+    <!-- Research Topics -->
+    <section class="research">
+        <h2>Research</h2>
+        <p align=justify>The goal of our work is to design advanced visual perception models that extend the boundaries
+            of current visual capabilities. My group currently focuses on four directions: 2D Perception, 3D
+            Perception, Spatial Reasoning, and Tools.</p><br>
+        <div class="topics">
+            <!-- 2D Perception -->
+            <div class="card">
+                <div class="tags">
+                    <span class="tag tag-2d">
+                        <h3>2D perception</h3>
+                    </span>
+                </div>
+                <br>
+                <img src="teasers/papers/maskrcnn.png" alt="2D perception teaser" />
+                <p>Recognition and segmentation in images.</p>
             </div>
-          </div>
 
-          <hr><br>
-
-          <!-- InteractNet -->
-          <div class="project">
-            <img src="teasers/interactnet_teaser.png" alt="InteractNet teaser" width="130" height="100" loading="lazy">
-            <div class="info">
-              <a href="https://arxiv.org/pdf/1704.07333.pdf"><strong>Detecting & Recognizing Human-Object
-                  Interactions</strong></a><br><span>Gkioxari, Girshick, Dollàr &
-                He</span><br><span class="meta">CVPR 2018</span>
+            <!-- 3D Perception -->
+            <div class="card">
+                <div class="tags">
+                    <span class="tag tag-3d">
+                        <h3>3D perception</h3>
+                    </span>
+                </div>
+                <br>
+                <img src="teasers/papers/omni3d_aria.gif" alt="3D perception teaser" />
+                <p>3D scene reconstruction and understanding.</p>
             </div>
-          </div>
 
-        </details>
-      </div>
-
-      <!-- 3D Perception -->
-      <div class="card">
-        <img src="teasers/omni3d_aria.gif" alt="3D perception teaser" />
-        <strong>3D Perception</strong>
-        <details>
-          <summary><span style="color:var(--accent-3);">Selected Projects</span></summary>
-          <br>
-
-          <!-- Find Any Part in 3D -->
-          <div class="project">
-            <img src="teasers/find3d_new.gif" alt="Find3D" width="130" height="100" loading="lazy">
-            <div class="info">
-              <a href="https://ziqi-ma.github.io/find3dsite/">
-                <strong>Find Any Part in 3D</strong></a><br><span>Ma, Yue &
-                Gkioxari</span><br><span class="meta">ICCV&nbsp;2025</span><span class="blink">new!</span>
-
+            <!-- Spatial Reasoning -->
+            <div class="card">
+                <div class="tags">
+                    <span class="tag tag-spatial">
+                        <h3>spatial reasoning</h3>
+                    </span>
+                </div>
+                <br>
+                <img src="teasers/papers/vadar_ex.gif" alt="Spatial reasoning teaser" />
+                <p>Agents that reason about space and time.</p>
             </div>
-          </div>
 
-          <hr><br>
-
-          <!-- Kyvo -->
-          <div class="project">
-            <img src="teasers/kyvo_rendering.gif" alt="Kyvo" width="130" height="100" loading="lazy">
-            <div class="info">
-              <a href="https://glab-caltech.github.io/kyvo/">
-                <strong>Aligning Text, Images, and 3D Structure Token-by-Token</strong></a><br><span class="meta">Sahoo,
-                Tibrewal &
-                Gkioxari</span><br><span class="blink">new!</span>
+            <!-- Tools -->
+            <div class="card">
+                <div class="tags">
+                    <span class="tag tag-tools">
+                        <h3>tools</h3>
+                    </span>
+                </div>
+                <br>
+                <img src="teasers/papers/pytorch3dlogo.png" alt="Tools teaser" />
+                <p>Tools for 3D deep learning,
+                    <a href="https://pytorch3d.org/" target="_blank">PyTorch3D</a>.
+                </p>
             </div>
-          </div>
 
-          <hr><br>
+        </div>
+    </section>
 
-          <!-- Omni3D -->
-          <div class="project">
-            <img src="teasers/omni3d_aria.gif" alt="Omni3D teaser" width="130" height="100" loading="lazy">
-            <div class="info">
-              <a href="https://garrickbrazil.com/omni3d/">
-                <strong>Omni3D: A Large Benchmark&nbsp;and Model for 3D Object Detection in the Wild</strong>
-              </a><br><span class="meta">Brazil et al, CVPR 2023</span>
+    <!-- Group Members -->
+    <section class="group">
+        <h2>Glab Members</h2>
+        <div class="people">
+            <div><a href="https://ziqi-ma.github.io/">
+                    <img src="teasers/students/ziqi.jpeg" alt="Ziqi Ma" />
+                    <br>
+                    Ziqi Ma</a></div>
+            <div><a href="https://damianomarsili.github.io/">
+                    <img src="teasers/students/Damiano.jpg" alt="Damiano Marsili" />
+                    <br>
+                    Damiano Marsili</a></div>
+            <div><a href="https://aadsah.github.io/">
+                    <img src="teasers/students/aadarsh.jpg" alt="Aadarsh Sahoo" />
+                    <br>
+                    Aadarsh Sahoo</a></div>
+            <div><a href="https://ilonadem.github.io/id-folio/">
+                    <img src="teasers/students/ilona.jpg" alt="Ilona Demler" />
+                    <br>
+                    Ilona Demler</a><br>(main advisor: Perona)</div>
+            <div><a href="https://www.raphikang.com/">
+                    <img src="teasers/students/raphi.jpg" alt="Raphi Kang" />
+                    <br>
+                    Raphi Kang</a><br>(main advisor: Perona)</div>
+        </div>
+    </section>
+
+    <!-- Research Highlights -->
+    <section class="highlights">
+        <h2>Highlights</h2>
+        <div class="highlights-list">
+
+            <!-- 3D perception highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <video src="teasers/papers/sam3d_teaser.mp4" muted autoplay loop playsinline></video>
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-3d">3D perception</span>
+                    </div>
+                    <h3>SAM 3D: 3Dfy Anything in Images</h3>
+                    <div class="highlight-meta">
+                        SAM 3D Team<br>
+                    </div>
+                    <div class="highlight-links">
+                        <a href="https://ai.meta.com/research/publications/sam-3d-3dfy-anything-in-images/">paper</a>
+                        <a href="https://ai.meta.com/sam3d/">project</a>
+                        <a href="https://github.com/facebookresearch/sam-3d-objects">code</a>
+                        <a href="https://www.aidemos.meta.com/segment-anything/editor/convert-image-to-3d">demo</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3D perception highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <video src="https://glab-caltech.github.io/steer3d/static/videos/video_website.mp4" muted autoplay
+                        loop playsinline></video>
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-3d">3D perception</span>
+                    </div>
+                    <h3>Steer3D: Feedforward 3D Editing via Text-Steerable Image-to-3D</h3>
+                    <div class="highlight-meta">
+                        Ziqi Ma, Hongqiao Chen, Yisong Yue, Georgia Gkioxari<br>
+                    </div>
+                    <div class="highlight-links">
+                        <a href="">paper</a>
+                        <a href="https://glab-caltech.github.io/steer3d/">project</a>
+                        <a href="">code</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2D perception highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <img src="teasers/papers/convseg.gif" alt="ConvSeg teaser">
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-2d">2D perception</span>
+                    </div>
+                    <h3>Conversational Image Segmentation: Grounding Abstract Concepts with Scalable Supervision</h3>
+                    <div class="highlight-meta">
+                        Aadarsh Sahoo, Georgia Gkioxari<br>
+                    </div>
+                    <div class="highlight-links">
+                        <a href="">paper</a>
+                        <a href="">project</a>
+                        <a href="">code</a>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Spatial reasoning highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <img src="teasers/papers/twin.png" alt="TWIN teaser">
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-spatial">spatial reasoning</span>
+                    </div>
+                    <h3>Same or Not? Enhancing Visual Perception in Vision-Language Models</h3>
+                    <div class="highlight-meta">
+                        Damiano Marsili, Aditya Mehta, Ryan Y. Lin, Georgia Gkioxari<br>
+                    </div>
+                    <div class="highlight-links">
+                        <a href="">paper</a>
+                        <a href="">project</a>
+                        <a href="">code</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Spatial reasoning highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <video
+                        src="https://github.com/glab-caltech/valor/raw/refs/heads/main/static/videos/llm_verifier.mp4"
+                        muted autoplay loop playsinline></video>
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-spatial">spatial reasoning</span>
+                    </div>
+                    <h3>No Labels, No Problem: Training Visual Reasoners with Multimodal Verifiers</h3>
+                    <div class="highlight-meta">
+                        Damiano Marsili, Georgia Gkioxari<br>
+                    </div>
+                    <div class="highlight-links">
+                        <a href="https://arxiv.org/pdf/2512.08889">paper</a>
+                        <a href="https://glab-caltech.github.io/valor/">project</a>
+                        <a href="https://github.com/damianomarsili/VALOR">code</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3D perception highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <img src="teasers/papers/kyvo_rendering.gif" alt="Kyvo teaser">
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-3d">3D perception</span>
+                    </div>
+                    <h3>Aligning Text, Images, and 3D Structure Token-by-Token</h3>
+                    <div class="highlight-meta">
+                        Aadarsh Sahoo, Vansh Tibrewal, Georgia Gkioxari<br>
+                    </div>
+                    <div class="highlight-links">
+                        <a href="https://arxiv.org/abs/2506.08002">paper</a>
+                        <a href="https://glab-caltech.github.io/kyvo/">project</a>
+                        <a href="https://github.com/AadSah/kyvo">code</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3D perception highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <img src="teasers/papers/find3d_new.gif" alt="Find3D teaser">
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-3d">3D perception</span>
+                    </div>
+                    <h3>Find3D: Find Any Part in 3D</h3>
+                    <div class="highlight-meta">
+                        Ziqi Ma, Yisong Yue, Georgia Gkioxari<br>
+                        ICCV 2025, Highlight &#x2728;
+                    </div>
+                    <div class="highlight-links">
+                        <a href="https://arxiv.org/abs/2411.13550">paper</a>
+                        <a href="https://ziqi-ma.github.io/find3dsite/">project</a>
+                        <a href="https://github.com/ziqi-ma/Find3D">code</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Spatial reasoning highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <video src="https://github.com/glab-caltech/vadar/raw/refs/heads/main/static/videos/vadar.mp4" muted
+                        autoplay loop playsinline></video>
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-spatial">spatial reasoning</span>
+                    </div>
+                    <h3>VADAR: Visual Agentic AI for Spatial Reasoning with a Dynamic API</h3>
+                    <div class="highlight-meta">
+                        Damiano Marsili, Rohun Agrawal, Yisong Yue, Georgia Gkioxari<br>
+                        CVPR 2025
+                    </div>
+                    <div class="highlight-links">
+                        <a href="https://arxiv.org/abs/2502.06787">paper</a>
+                        <a href="https://glab-caltech.github.io/vadar/">project</a>
+                        <a href="https://github.com/damianomarsili/VADAR">code</a>
+                        <a href="https://huggingface.co/datasets/dmarsili/Omni3D-Bench">data</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3D perception highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <img src="teasers/papers/omni3d_aria.gif" alt="Omni3D teaser">
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-3d">3D perception</span>
+                    </div>
+                    <h3>Omni3D: A Large Benchmark and Model for 3D Object Detection in the Wild</h3>
+                    <div class="highlight-meta">
+                        Garrick Brazil, Abhinav Kumar, Julian Straub, Nikhila Ravi, Justin Johnson, Georgia
+                        Gkioxari<br>
+                        CVPR 2023
+                    </div>
+                    <div class="highlight-links">
+                        <a href="https://garrickbrazil.com/omni3d/static/omni3d_with_appendix.pdf">paper</a>
+                        <a href="https://garrickbrazil.com/omni3d/">project</a>
+                        <a href="https://github.com/facebookresearch/omni3d">code</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tools highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <img src="teasers/papers/pytorch3dlogo.png" alt="PyTorch3D teaser">
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-tools">tools</span>
+                    </div>
+                    <h3>PyTorch3D</h3>
+                    <div class="highlight-meta">
+                        Nikhila Ravi, Jeremy Reizenstein, David Novotny, Taylor Gordon, Wan-Yen Lo, Justin Johnson,
+                        Georgia Gkioxari <br>
+                        <em>Open-source library for 3D deep learning in PyTorch</em>
+                    </div>
+                    <div class="highlight-links">
+                        <a href="https://arxiv.org/abs/2007.08501/">paper</a>
+                        <a href="https://pytorch3d.org/">project</a>
+                        <a href="https://github.com/facebookresearch/pytorch3d">code</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2D perception highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <img src="teasers/papers/mrcnn_teaser.png" alt="Mask R-CNN teaser">
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-2d">2D perception</span>
+                    </div>
+                    <h3>Mask R-CNN</h3>
+                    <div class="highlight-meta">
+                        Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick<br>
+                        ICCV 2017, Marr Prize
+                    </div>
+                    <div class="highlight-links">
+                        <a href="https://arxiv.org/pdf/1703.06870.pdf">paper</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Alumni -->
+    <section class="alumni">
+        <h3>Alumni</h3>
+        <ul style="text-align: left;">
+            <li><a href="https://rohunagrawal.github.io/">
+                    Rohun Agrawal</a> (BS @ Caltech, 2025 → PhD @ Columbia)</li>
+            <li><a href="https://saberatalukder.com/">
+                    Sabera Talukder</a> (PhD @ Caltech, 2025 → something new &#128640;)</li>
+        </ul>
+    </section>
+
+    <!-- Teaching -->
+    <section class="teaching">
+        <h2>Teaching at Caltech</h2>
+        <div class="teaching-item">
+            <img src="teasers/papers/eecs148.png" alt="EE/CS 148" />
+            <div>
+                <p><a href="https://gkioxari.github.io/teaching/cs148_sp2023/"><strong>EE/CS 148 — Spring 2023:</strong>
+                        Large
+                        Language & Vision Models</a></p>
+                <p><a href="https://gkioxari.github.io/teaching/cs148/"><strong>EE/CS 148 — Spring 2024:</strong> Large
+                        Language & Vision Models</a></p>
             </div>
-          </div>
-
-          <hr><br>
-
-          <!-- Multiview Compressive Coding for 3D Reconstruction -->
-          <div class="project">
-            <img src="teasers/spyro.jpg"><img src="teasers/spyro.gif" alt="MCC 3D teaser" width="130" height="100"
-              loading="lazy">
-            <div class="info">
-              <a href="https://mcc3d.github.io/">
-                <strong>Multiview Compressive Coding for 3D Reconstruction</strong></a><br><span class="meta">Wu et
-                al, CVPR 2023</span>
+        </div>
+        <div class="teaching-item">
+            <img src="teasers/papers/cs101.gif" alt="CS 101" />
+            <div>
+                <p><a
+                        href="https://docs.google.com/spreadsheets/d/1TyeekhGqWQhUjdvz3jPoj-NgDZQhp1_I8fCHVlMJE6o/edit?usp=sharing"><strong>CS
+                            101 —
+                            Winter 2024:</strong> Learning & 3D</a></p>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <hr><br>
-
-        </details>
-      </div>
-
-      <!-- 3D Reasoning -->
-      <div class="card">
-        <img src="teasers/vadar_ex.gif" alt="3D reasoning teaser" />
-        <strong>Spatial Reasoning</strong>
-        <details>
-          <summary><span style="color:var(--accent-3);">Selected Projects</span></summary>
-          <br>
-
-          <!-- VADAR -->
-          <div class="project">
-            <video src="https://github.com/glab-caltech/vadar/raw/refs/heads/main/static/videos/vadar.mp4" alt="game"
-              width="175" height="100" muted autoplay loop playsinline></video>
-            <div class="info">
-              <a href="https://glab-caltech.github.io/vadar/">
-                <strong>VADAR: Visual Agentic AI for Spatial Reasoning with a Dynamic API</strong></a><br><span>Marsili,
-                Agrawal, Yue & Gkioxari</span><br><span class="meta">CVPR 2025</span><span class="blink">new!</span>
-            </div>
-          </div>
-        </details>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- News -->
-  <section class="news">
-    <h2>News</h2>
-    <ul>
-      <li>Glab received the <a href="https://x.com/AIatMeta/status/1879990701234221190">Meta LLM Evaluation Research
-          Grant</a>.</li>
-      <li>I was awarded the <a href="http://www.okawa-foundation.or.jp/en/activities/research_grant/list.html">Okawa
-          Research
-          Grant</a>.</li>
-      <li>I was honored with a <a
-          href="https://research.google/programs-and-events/research-scholar-program/recipients/?filtertab=2024">Google
-          Faculty Scholar Award&nbsp;2024</a>.</li>
-      <li>I received an <a
-          href="https://www.amazon.science/research-awards/program-updates/99-amazon-research-awards-recipients-announced">Amazon
-          Research Award</a>.</li>
-      <li>Check out our discussion about AI and its portrayal in Hollywood movies: <a
-          href="https://www.youtube.com/watch?v=_1pl8VWpZUA">Sci-Fi to Sci-Fact: Artificial Intelligence on the
-          Big Screen</a>.</li>
-    </ul>
-  </section>
-
-  <!-- Group Members -->
-  <section class="group">
-    <h2>Glab Members</h2>
-    <div class="people">
-      <div><a href="https://ziqi-ma.github.io/">
-          <img src="teasers/students/ziqi.jpeg" alt="Ziqi Ma" />
-          Ziqi Ma</a></div>
-      <div><a href="https://damianomarsili.github.io/">
-          <img src="teasers/students/Damiano.jpg" alt="Damiano Marsili" />
-          Damiano Marsili</a></div>
-      <div><a href="https://aadsah.github.io/">
-          <img src="teasers/students/aadarsh.jpg" alt="Aadarsh Sahoo" />
-          Aadarsh Sahoo</a></div>
-      <div><a href="https://ilonadem.github.io/id-folio/">
-          <img src="teasers/students/ilona.jpg" alt="Ilona Demler" />
-          Ilona Demler</a><br>(primary advisor: Pietro Perona)</div>
-      <div><a href="https://saberatalukder.com/">
-          <img src="teasers/students/sabera.jpg" alt="Sabera Talukder" />
-          Sabera Talukder</a><br>(primary advisor: Yisong Yue)</div>
-      <div><a href="https://www.raphikang.com/">
-          <img src="teasers/students/raphi.jpg" alt="Raphi Kang" />
-          Raphi Kang</a><br>(primary advisor: Pietro Perona)</div>
-    </div>
-  </section>
-
-  <!-- Alumni -->
-  <section class="alumni">
-    <h3>Alumni</h3>
-    <ul style="text-align: left;">
-      <li>
-        <a href="https://rohunagrawal.github.io/">
-          Rohun Agrawal</a> (B.S. @ Caltech, 2025 → PhD @ Columbia)
-      </li>
-    </ul>
-  </section>
-
-  <!-- Teaching -->
-  <section class="teaching">
-    <h2>Teaching at Caltech</h2>
-    <div class="teaching-item">
-      <img src="teasers/eecs148.png" alt="EE/CS 148" />
-      <div>
-        <p><a href="https://gkioxari.github.io/teaching/cs148_sp2023/"><strong>EE/CS 148 — Spring 2023:</strong> Large
-            Language & Vision Models</a></p>
-        <p><a href="https://gkioxari.github.io/teaching/cs148/"><strong>EE/CS 148 — Spring 2024:</strong> Large
-            Language & Vision Models</a></p>
-      </div>
-    </div>
-    <div class="teaching-item">
-      <img src="teasers/cs101.gif" alt="CS 101" />
-      <div>
-        <p><a
-            href="https://docs.google.com/spreadsheets/d/1TyeekhGqWQhUjdvz3jPoj-NgDZQhp1_I8fCHVlMJE6o/edit?usp=sharing"><strong>CS 101 —
-              Winter 2024:</strong> Learning & 3D</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Join / Contact -->
-  <section class="join">
-    <h2>Join Us</h2>
-    <p><strong>Caltech students (undergrads & grads):</strong> If you wish to work with me, please read <a
-        href="https://docs.google.com/document/d/1AJrIuXnVmzqOGwTTXGSIr3IgF8K_3E4zIQQZ1QSdk7M/edit?usp=sharing">this
-        information</a>.</p>
-    <p><strong>Prospective post‑docs:</strong> Interested in computer vision, 3D, representation learning, or
-      perception?
-      Email me your CV and a short research statement.</p>
-    <p><strong>Prospective PhD students:</strong> Apply directly to the <a
-        href="https://gradoffice.caltech.edu/admissions/applyonline">CMS department</a> and mention my name in your
-      statement of purpose. No separate email needed.</p>
-  </section>
+    <!-- Join / Contact -->
+    <section class="join">
+        <h2>Join Us</h2>
+        <p><strong>Caltech students (undergrads & grads):</strong> If you wish to work with me, please read <a
+                href="https://docs.google.com/document/d/1AJrIuXnVmzqOGwTTXGSIr3IgF8K_3E4zIQQZ1QSdk7M/edit?usp=sharing">this
+                information</a>.</p>
+        <p><strong>Prospective post-docs:</strong> Interested in computer vision, 3D, representation learning, or
+            perception?
+            Email me your CV and a short research statement.</p>
+        <p><strong>Prospective PhD students:</strong> Apply directly to the <a
+                href="https://gradoffice.caltech.edu/admissions/applyonline">CMS department</a> and mention my name in
+            your
+            statement of purpose. No separate email needed.</p>
+    </section>
 
 </body>
 

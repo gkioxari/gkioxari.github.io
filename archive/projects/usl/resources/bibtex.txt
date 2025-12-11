@@ -1,0 +1,5 @@
+@article{usl2022,
+Title={Learning 3D Object Shape and Layout without 3D Supervision},
+Author={Georgia Gkioxari, Nikhila Ravi, Justin Johnson},
+Journal={CVPR},
+Year={2022}}
