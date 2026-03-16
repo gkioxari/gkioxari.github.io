@@ -215,6 +215,11 @@
             color: #5b2a6e;
         }
 
+        .tag-world {
+            background: rgba(94, 135, 64, 0.2);
+            color: #246508;
+        }
+
         /* News */
         .news ul {
             list-style: disc inside;
@@ -384,7 +389,9 @@
                     class="tag tag-spatial">spatial reasoning</span>
                 by closing the loop
                 between models and data, allowing systems to critique, augment, and re-curate their own training
-                experience so they can acquire stronger and more general visual understanding over time.</li>
+                experience so they can acquire stronger and more general visual understanding over time.
+                We believe this is the path toward state-persistent <span class="tag tag-world">world models</span>.
+            </li>
         </ul>
 
         <div class="topics">
@@ -393,7 +400,7 @@
                 <div class="tags">
                     <span class="tag tag-2d">
                         <h3>2D perception</h3>
-                    </span>
+                    </span><br><br>
                 </div>
                 <br>
                 <img src="teasers/papers/maskrcnn.png" alt="2D perception teaser" />
@@ -405,7 +412,7 @@
                 <div class="tags">
                     <span class="tag tag-3d">
                         <h3>3D perception</h3>
-                    </span>
+                    </span> <br><br>
                 </div>
                 <br>
                 <img src="teasers/papers/omni3d_aria.gif" alt="3D perception teaser" />
@@ -415,13 +422,16 @@
             <!-- Spatial Reasoning -->
             <div class="card">
                 <div class="tags">
+                    <span class="tag tag-world">
+                        <h3>world models</h3>
+                    </span>
                     <span class="tag tag-spatial">
                         <h3>spatial reasoning</h3>
                     </span>
                 </div>
                 <br>
                 <img src="teasers/papers/vadar_ex.gif" alt="Spatial reasoning teaser" />
-                <p>Agents that reason about space and time.</p>
+                <p>World model agents that reason in space and time.</p>
             </div>
 
             <!-- Tools -->
@@ -429,7 +439,7 @@
                 <div class="tags">
                     <span class="tag tag-tools">
                         <h3>tools</h3>
-                    </span>
+                    </span> <br><br>
                 </div>
                 <br>
                 <img src="teasers/papers/pytorch3dlogo.png" alt="Tools teaser" />
@@ -492,6 +502,29 @@
                         <a href="https://ai.meta.com/sam3d/">project</a>
                         <a href="https://github.com/facebookresearch/sam-3d-objects">code</a>
                         <a href="https://www.aidemos.meta.com/segment-anything/editor/convert-image-to-3d">demo</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- World Model highlight -->
+            <article class="highlight-item highlight-tools">
+                <div class="highlight-media">
+                    <video src="https://ziqi-ma.github.io/assets/video/stevo/pouring_water_into_cup_lingbot.mp4" muted
+                        autoplay loop playsinline></video>
+                </div>
+                <div class="highlight-content">
+                    <div class="tags">
+                        <span class="tag tag-world">world models</span>
+                    </div>
+                    <h3>Out of Sight, Out of Mind? Evaluating State Evolution in Video World Models
+                    </h3>
+                    <div class="highlight-meta">
+                        Ziqi Ma, Mengzhan Liufu, Georgia Gkioxari<br>
+                    </div>
+                    <div class="highlight-links">
+                        <a href="https://arxiv.org/abs/2603.13215">paper</a>
+                        <a href="https://glab-caltech.github.io/STEVOBench/">project</a>
+                        <a href="https://ziqi-ma.github.io/blog/2026/outofsight/">blog</a>
                     </div>
                 </div>
             </article>
