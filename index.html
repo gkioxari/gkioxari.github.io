@@ -11,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
         integrity="sha512-tpWmw+91EClZLgsFNKFuF8psJxq9r72p5M8sZfGiCaV3m3AQk7Wtb0xgOu17QqC9u7sFz8xTrewd3y8B8Ul+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <style>
         :root {
             --accent-1: #80c4b7;
@@ -73,9 +74,31 @@
             margin-bottom: 0.25rem;
         }
 
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
         .social-links a {
-            margin-right: 0.75rem;
-            font-size: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 999px;
+            font-size: 1.15rem;
+            color: var(--accent-1);
+            background: rgba(128, 196, 183, 0.12);
+            transition: color 0.2s, background 0.2s, transform 0.2s;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            background: var(--accent-2);
+            transform: translateY(-1px);
         }
 
         section {
@@ -359,16 +382,30 @@
                 Read more about me and my work in this <a
                     href="https://ai.facebook.com/blog/qa-with-georgia-gkioxari-winner-of-the-2021-pami-young-researcher-award">Q&A</a>.
             </p><br>
-            <p>
-                <a href="mailto:georgia.gkioxari@gmail.com">email</a> |
-                <a href="cv_gkioxari.pdf">cv</a> |
-                <a href="https://twitter.com/georgiagkioxari">twitter/x</a> |
-                <a href="https://www.linkedin.com/in/georgia-gkioxari-16967b20" target="_blank">linkedin</a>
-                |
-                <a href="https://scholar.google.com/citations?user=kQisE-gAAAAJ&hl=en" target="_blank">google
-                    scholar</a> |
-                <a href=" https://github.com/gkioxari/" target="_blank">github</a>
-            </p>
+            <div class="social-links" aria-label="Profile links">
+                <a href="mailto:georgia.gkioxari@gmail.com" aria-label="Email" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="cv_gkioxari.pdf" aria-label="CV" title="CV">
+                    <i class="fa-solid fa-file-lines"></i>
+                </a>
+                <a href="https://twitter.com/georgiagkioxari" target="_blank" rel="noopener noreferrer"
+                    aria-label="Twitter / X" title="Twitter / X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/georgia-gkioxari-16967b20" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=kQisE-gAAAAJ&hl=en" target="_blank"
+                    rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </a>
+                <a href="https://github.com/gkioxari/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                    title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
         </div>
     </header>
 
