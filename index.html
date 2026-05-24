@@ -282,17 +282,43 @@
         /* People grid */
         .people {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        @media (min-width: 900px) {
+            .people {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        .person-card {
+            background: #fff;
+            border-radius: 0.75rem;
+            padding: 0.85rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
         }
 
-        .people img {
-            width: 120px;
-            height: 120px;
+        .person-card img {
+            width: 105px;
+            height: 105px;
             object-fit: cover;
             border-radius: 50%;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .person-card a {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .person-role {
+            margin-top: 0.2rem;
+            font-size: 0.85rem;
         }
 
         /* Teaching */
@@ -336,7 +362,8 @@
             }
 
             .card,
-            .highlight-item {
+            .highlight-item,
+            .person-card {
                 background: #1f2937;
                 box-shadow: none;
             }
@@ -529,26 +556,61 @@
     <section class="group">
         <h2>Glab Members</h2>
         <div class="people">
-            <div><a href="https://ziqi-ma.github.io/">
-                    <img src="teasers/students/ziqi.jpeg" alt="Ziqi Ma" />
-                    <br>
-                    Ziqi Ma</a></div>
-            <div><a href="https://damianomarsili.github.io/">
-                    <img src="teasers/students/Damiano.jpg" alt="Damiano Marsili" />
-                    <br>
-                    Damiano Marsili</a></div>
-            <div><a href="https://aadsah.github.io/">
-                    <img src="teasers/students/aadarsh.jpg" alt="Aadarsh Sahoo" />
-                    <br>
-                    Aadarsh Sahoo</a></div>
-            <div><a href="https://ilonadem.github.io/id-folio/">
-                    <img src="teasers/students/ilona.jpg" alt="Ilona Demler" />
-                    <br>
-                    Ilona Demler</a><br>(main advisor: Perona)</div>
-            <div><a href="https://www.raphikang.com/">
-                    <img src="teasers/students/raphi.png" alt="Raphi Kang" />
-                    <br>
-                    Raphi Kang</a><br>(main advisor: Perona)</div>
+
+            <div class="person-card">
+                <img src="teasers/students/ziqi.jpeg" alt="Ziqi Ma" />
+                <a href="https://ziqi-ma.github.io/">Ziqi Ma</a>
+                <div class="person-role">PhD Student</div>
+            </div>
+
+            <div class="person-card">
+                <img src="teasers/students/Damiano.jpg" alt="Damiano Marsili" />
+                <a href="https://damianomarsili.github.io/">Damiano Marsili</a>
+                <div class="person-role">PhD Student</div>
+            </div>
+
+            <div class="person-card">
+                <img src="teasers/students/aadarsh.jpg" alt="Aadarsh Sahoo" />
+                <a href="https://aadsah.github.io/">Aadarsh Sahoo</a>
+                <div class="person-role">PhD Student</div>
+            </div>
+
+            <div class="person-card">
+                <img src="teasers/students/ilona.jpg" alt="Ilona Demler" />
+                <a href="https://ilonademler.com/">Ilona Demler</a>
+                <div class="person-role">PhD Student</div>
+            </div>
+
+            <div class="person-card">
+                <img src="teasers/students/raphi.png" alt="Raphi Kang" />
+                <a href="https://www.raphikang.com/">Raphi Kang</a>
+                <div class="person-role">PhD Student</div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=tBcqfncAAAAJ&citpid=1"
+                    alt="Ines Kim" />
+                <a href="https://ines-hyeonsu-kim.github.io/">Ines Kim</a>
+                <div class="person-role">Incoming PhD Student</div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://vanshtibrewal.github.io/images/prof_pic.jpg" alt="Vansh Tibrewal" />
+                <a href="https://vanshtibrewal.github.io/">Vansh Tibrewal</a>
+                <div class="person-role">Incoming PhD Student</div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://www.neeharperi.com/images/profile.png" alt="Neehar Peri" />
+                <a href="https://www.neeharperi.com/">Neehar Peri</a>
+                <div class="person-role">Incoming Post-doc</div>
+            </div>
+            <div class="person-card">
+                <img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=X5X-Ub0AAAAJ&citpid=8"
+                    alt="Harry Chen" />
+                <a href="https://scholar.google.com/citations?user=X5X-Ub0AAAAJ&hl=en">Hongqiao Chen</a>
+                <div class="person-role">Undergrad Researcher</div>
+            </div>
         </div>
     </section>
 
