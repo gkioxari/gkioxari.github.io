@@ -254,9 +254,61 @@
             list-style: disc inside;
         }
 
-        /* Alumni */
+        //* Alumni (expandable) */
+        .alumni details {
+            background: #fff;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            padding: 0.25rem 1rem;
+        }
+
+        .alumni summary {
+            font-size: 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.75rem 0;
+        }
+
+        .alumni summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Leading +/− symbol */
+        .alumni summary::before {
+            content: "+";
+            font-weight: 400;
+            color: var(--accent-1);
+            width: 1.2rem;
+            text-align: center;
+        }
+
+        .alumni details[open] summary::before {
+            content: "\2212";
+            /* minus sign */
+        }
+
+        .alumni summary::after {
+            content: "\f107";
+            /* chevron-down */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: 1rem;
+            margin-left: auto;
+            color: var(--accent-1);
+            transition: transform 0.2s;
+        }
+
+        .alumni details[open] summary::after {
+            transform: rotate(180deg);
+        }
+
         .alumni ul {
             list-style: disc inside;
+            padding: 0.25rem 0 0.75rem;
         }
 
         /* Blinking tag for new papers */
@@ -442,7 +494,8 @@
         </div>
     </header>
 
-    <!-- Topical -->
+
+    <!-- Topical
     <section class="topical">
         <h1>@ CVPR 2026</h1>
 
@@ -480,14 +533,14 @@
             </div>
         </div>
     </section>
-
+     -->
 
     <!-- Research Topics -->
     <section class="research">
         <h2>Self-Improving Machine Perception</h2>
         <p align=justify>
             My group builds visual systems that interpret the world from images, and continually get better at
-            doing so.
+            doing so. This requires re-thiking optimization, training data and tasks.
         <p><br>
         <ul style="list-style: none; padding-left: 0;">
             <li style="margin-bottom: 12px;">&#10148; We develop visual perception models that unlock new
@@ -587,15 +640,27 @@
             </div>
 
             <div class="person-card">
+                <img src="teasers/students/raphi.png" alt="Raphi Kang" />
+                <a href="https://www.raphikang.com/">Raphi Kang</a>
+                <div class="person-role">PhD Student</div>
+            </div>
+
+            <div class="person-card">
                 <img src="teasers/students/ilona.jpg" alt="Ilona Demler" />
                 <a href="https://ilonademler.com/">Ilona Demler</a>
                 <div class="person-role">PhD Student</div>
             </div>
 
             <div class="person-card">
-                <img src="teasers/students/raphi.png" alt="Raphi Kang" />
-                <a href="https://www.raphikang.com/">Raphi Kang</a>
+                <img src="https://vanshtibrewal.github.io/images/prof_pic.png" alt="Vansh Tibrewal" />
+                <a href="https://vanshtibrewal.github.io/">Vansh Tibrewal</a>
                 <div class="person-role">PhD Student</div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://www.neeharperi.com/images/profile.png" alt="Neehar Peri" />
+                <a href="https://www.neeharperi.com/">Neehar Peri</a>
+                <div class="person-role">Post-doc</div>
             </div>
 
             <div class="person-card">
@@ -606,17 +671,6 @@
             </div>
 
             <div class="person-card">
-                <img src="https://vanshtibrewal.github.io/images/prof_pic.jpg" alt="Vansh Tibrewal" />
-                <a href="https://vanshtibrewal.github.io/">Vansh Tibrewal</a>
-                <div class="person-role">Incoming PhD Student</div>
-            </div>
-
-            <div class="person-card">
-                <img src="https://www.neeharperi.com/images/profile.png" alt="Neehar Peri" />
-                <a href="https://www.neeharperi.com/">Neehar Peri</a>
-                <div class="person-role">Incoming Post-doc</div>
-            </div>
-            <div class="person-card">
                 <img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=X5X-Ub0AAAAJ&citpid=8"
                     alt="Harry Chen" />
                 <a href="https://scholar.google.com/citations?user=X5X-Ub0AAAAJ&hl=en">Hongqiao Chen</a>
@@ -625,9 +679,22 @@
         </div>
     </section>
 
+    <!-- Alumni (expandable) -->
+    <section class="alumni">
+        <details>
+            <summary>Alumni</summary>
+            <ul style="text-align: left;">
+                <li><a href="https://rohunagrawal.github.io/">Rohun Agrawal</a>
+                    (BS @ Caltech, 2025 → PhD @ Columbia)</li>
+                <li><a href="https://vanshtibrewal.github.io/">Vansh Tibrewal</a>
+                    (BS @ Caltech, 2026 → PhD @ Caltech)</li>
+            </ul>
+        </details>
+    </section>
+
     <!-- Research Highlights -->
     <section class="highlights">
-        <h2>Highlights</h2>
+        <h2>Research Highlights</h2>
         <div class="highlights-list">
 
             <!-- World Model highlight -->
@@ -906,14 +973,6 @@
                 </div>
             </article>
         </div>
-    </section>
-
-    <!-- Alumni -->
-    <section class="alumni">
-        <h3>Alumni</h3>
-        <ul style="text-align: left;">
-            <li><a href="https://rohunagrawal.github.io/">
-                    Rohun Agrawal</a> (BS @ Caltech, 2025 → PhD @ Columbia)</li>
     </section>
 
     <!-- Teaching -->
