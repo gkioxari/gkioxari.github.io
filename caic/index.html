@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caltech AI Colloquium (CAIC)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        :root {
+            --accent-1: #80c4b7;
+            --accent-2: #eec95c;
+            --accent-3: #e3856b;
+            --accent-4: #c78fd8;
+            --accent-5: #d95f64;
+            --text: #333;
+            --bg: #fafafa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            font-weight: 300;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent-1);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-2);
+        }
+
+        /* Banner */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            background-image: url("https://caltechsites-prod-assets.resources.caltech.edu/auditoriums/images/beckman.4.2e16d0ba.fill-1866x1050-c100.format-avif.avif");
+            background-size: cover;
+            background-position: center 60%;
+            opacity: 0.55;
+        }
+
+        .banner::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(250, 250, 250, 0) 40%, var(--bg) 100%);
+        }
+
+        /* Hero */
+        header {
+            max-width: 1000px;
+            margin: 2rem auto 2rem;
+            padding: 0 1rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--accent-3);
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        /* Quick facts */
+        .facts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .fact {
+            background: #fff;
+            border-radius: 0.75rem;
+            padding: 0.85rem 1.1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            min-width: 200px;
+        }
+
+        .fact i {
+            font-size: 1.25rem;
+            color: var(--accent-1);
+        }
+
+        .fact .fact-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            opacity: 0.7;
+        }
+
+        .fact .fact-value {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 2.5rem auto;
+            padding: 0 1rem;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            text-align: justify;
+        }
+
+        /* Organizers */
+        .people {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        @media (min-width: 700px) {
+            .people {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .person-card {
+            background: #fff;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .person-card i {
+            font-size: 2.4rem;
+            color: var(--accent-1);
+            margin-bottom: 0.6rem;
+        }
+
+        .person-card .name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* Schedule table */
+        .schedule-wrap {
+            background: #fff;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 0.85rem 1.1rem;
+            background: rgba(128, 196, 183, 0.15);
+            color: #1a5c50;
+        }
+
+        tbody td {
+            padding: 0.8rem 1.1rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+            font-size: 0.95rem;
+        }
+
+        tbody tr.confirmed td {
+            background: rgba(238, 201, 92, 0.08);
+        }
+
+        .speaker-name {
+            font-weight: 600;
+        }
+
+        .speaker-affil {
+            opacity: 0.7;
+        }
+
+        .tbd {
+            opacity: 0.45;
+            font-style: italic;
+        }
+
+        .date-cell {
+            white-space: nowrap;
+        }
+
+        footer {
+            max-width: 1000px;
+            margin: 3rem auto 1.5rem;
+            font-size: 0.875rem;
+            text-align: center;
+            padding: 0 1rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            thead th,
+            tbody td {
+                padding: 0.6rem 0.7rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                --text: #e5e7eb;
+                --bg: #111827;
+            }
+
+            .fact,
+            .person-card,
+            .schedule-wrap {
+                background: #1f2937;
+                box-shadow: none;
+            }
+
+            thead th {
+                background: rgba(128, 196, 183, 0.18);
+                color: var(--accent-1);
+            }
+
+            tbody td {
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            tbody tr.confirmed td {
+                background: rgba(238, 201, 92, 0.06);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner" role="img" aria-label="Beckman Auditorium at Caltech"></div>
+
+    <!-- Hero -->
+    <header>
+        <h1>Caltech AI Colloquium</h1>
+        <div class="subtitle">CAIC &bull; 2026&ndash;2027</div>
+        <p>
+            The goal of the series is to bring distinguished speakers from different areas of AI research to campus to
+            share their latest results and perspectives on topics spanning core AI methods, AI for science, robotics
+            and broader areas of data science.
+        </p>
+
+        <div class="facts">
+            <div class="fact">
+                <i class="fa-solid fa-calendar-day"></i>
+                <div>
+                    <div class="fact-label">When</div>
+                    <div class="fact-value">Every second Tuesday, 4&ndash;5pm</div>
+                </div>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <div class="fact-label">Where</div>
+                    <div class="fact-value">TBD</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Organizers -->
+    <section class="organizers">
+        <h2>Organizers</h2>
+        <div class="people">
+            <div class="person-card">
+                <div class="name">Katie Bouman</div>
+            </div>
+            <div class="person-card">
+                <div class="name">Georgia Gkioxari</div>
+            </div>
+            <div class="person-card">
+                <div class="name">Eric Mazumdar</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="schedule">
+        <h2>Schedule</h2>
+        <div class="schedule-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Speaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="date-cell">Sep 29, 2026</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Oct 13, 2026</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr class="confirmed">
+                        <td class="date-cell">Oct 27, 2026</td>
+                        <td>4&ndash;5pm</td>
+                        <td><span class="speaker-name">Abhishek Gupta</span> <span class="speaker-affil">(UW)</span></td>
+                    </tr>
+                    <tr class="confirmed">
+                        <td class="date-cell">Nov 10, 2026</td>
+                        <td>4&ndash;5pm</td>
+                        <td><span class="speaker-name">Phillip Isola</span> <span class="speaker-affil">(MIT)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Nov 24, 2026</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Dec 8, 2026</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Jan 5, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr class="confirmed">
+                        <td class="date-cell">Jan 19, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td><span class="speaker-name">Shuran Song</span> <span class="speaker-affil">(Stanford)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Feb 2, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr class="confirmed">
+                        <td class="date-cell">Feb 16, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td><span class="speaker-name">Kyros Kutulakos</span> <span class="speaker-affil">(UToronto)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Mar 2, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Mar 16, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Mar 30, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Apr 13, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Apr 27, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">May 11, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td class="tbd">TBD</td>
+                    </tr>
+                    <tr class="confirmed">
+                        <td class="date-cell">May 25, 2027</td>
+                        <td>4&ndash;5pm</td>
+                        <td><span class="speaker-name">Marc Levoy</span> <span class="speaker-affil">(Adobe)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        Caltech AI Colloquium &bull; Organized by Katie Bouman, Georgia Gkioxari &amp; Eric Mazumdar
+    </footer>
+
+</body>
+
+</html>
