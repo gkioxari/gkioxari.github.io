@@ -126,15 +126,14 @@
         /* Research */
         .topics {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 1.5rem;
         }
 
         @media (min-width: 900px) {
             .topics {
-                grid-template-columns: repeat(4, minmax(0, 1fr));
-                gap: 1.2rem;
-                /* optional: a bit tighter so it all fits nicely */
+                grid-template-columns: repeat(5, minmax(0, 1fr));
+                gap: 1rem;
             }
         }
 
@@ -149,7 +148,8 @@
             text-align: center;
         }
 
-        .card img {
+        .card img,
+        .card video {
             max-width: 100%;
             height: 100px;
             object-fit: contain;
@@ -158,7 +158,8 @@
             transition: opacity 0.3s;
         }
 
-        .card img:hover {
+        .card img:hover,
+        .card video:hover {
             opacity: 1;
         }
 
@@ -254,7 +255,7 @@
             list-style: disc inside;
         }
 
-        //* Alumni (expandable) */
+        /* Alumni (expandable) */
         .alumni details {
             background: #fff;
             border-radius: 0.75rem;
@@ -540,8 +541,8 @@
         <h2>Self-Improving Machine Perception</h2>
         <p align=justify>
             My group builds visual systems that interpret the world from images, and continually get better at
-            doing so. This requires re-thiking optimization, training data and tasks.
-        <p><br>
+            doing so. This requires re-thinking optimization, training data and tasks.
+        </p><br>
         <ul style="list-style: none; padding-left: 0;">
             <li style="margin-bottom: 12px;">&#10148; We develop visual perception models that unlock new
                 capabilities
@@ -565,11 +566,11 @@
                 <div class="tags">
                     <span class="tag tag-2d">
                         <h3>2D perception</h3>
-                    </span><br><br>
+                    </span>
                 </div>
                 <br>
                 <img src="teasers/papers/maskrcnn.png" alt="2D perception teaser" />
-                <p>Recognition and segmentation in images.</p>
+                <p>Recognition in images.</p>
             </div>
 
             <!-- 3D Perception -->
@@ -577,26 +578,36 @@
                 <div class="tags">
                     <span class="tag tag-3d">
                         <h3>3D perception</h3>
-                    </span> <br><br>
+                    </span>
                 </div>
                 <br>
                 <img src="teasers/papers/omni3d_aria.gif" alt="3D perception teaser" />
-                <p>3D scene reconstruction and understanding.</p>
+                <p>3D scene reconstruction.</p>
             </div>
 
             <!-- Spatial Reasoning -->
             <div class="card">
                 <div class="tags">
-                    <span class="tag tag-world">
-                        <h3>world models</h3>
-                    </span>
                     <span class="tag tag-spatial">
                         <h3>spatial reasoning</h3>
                     </span>
                 </div>
                 <br>
                 <img src="teasers/papers/vadar_ex.gif" alt="Spatial reasoning teaser" />
-                <p>World model agents that reason in space and time.</p>
+                <p>Agents that reason in space and time.</p>
+            </div>
+
+            <!-- World Models -->
+            <div class="card">
+                <div class="tags">
+                    <span class="tag tag-world">
+                        <h3>world models</h3>
+                    </span>
+                </div>
+                <br>
+                <video src="https://glab-caltech.github.io/dynatokens/static/videos/teaser.mp4" muted autoplay loop
+                    playsinline></video>
+                <p>State-persistent models of a world that evolves in time.</p>
             </div>
 
             <!-- Tools -->
@@ -604,11 +615,11 @@
                 <div class="tags">
                     <span class="tag tag-tools">
                         <h3>tools</h3>
-                    </span> <br><br>
+                    </span>
                 </div>
                 <br>
                 <img src="teasers/papers/pytorch3dlogo.png" alt="Tools teaser" />
-                <p>Tools for 3D deep learning,
+                <p>Tools for 3D,
                     <a href="https://pytorch3d.org/" target="_blank">PyTorch3D</a>.
                 </p>
             </div>
